@@ -78,6 +78,10 @@ void sortedList() { // 삽입, 변경, 삭제 트랜잭션을 처리
 		case 'C':
 			i = 0;
 			flag = false;
+			if (!index) {
+				printf("%d번째 트랜잭션(수정) 실행 실패[누락된 키 값의 레코드]\n", cnt);
+				break;
+			}
 			while (i != index - 1) {
 				if (!strcmp(result[i].sNum, trans.sNum)) { //동일한 학번의 레코드가 존재하는 경우 검사
 					flag = true;
@@ -95,6 +99,10 @@ void sortedList() { // 삽입, 변경, 삭제 트랜잭션을 처리
 		case 'D':
 			i = 0;
 			flag = false;
+			if (!index) {
+				printf("%d번째 트랜잭션(삭제) 실행 실패[누락된 키 값의 레코드]\n", cnt);
+				break;
+			}
 			while (i != index - 1) {
 				if (!strcmp(result[i].sNum, trans.sNum)) { //동일한 학번의 레코드가 존재하는 경우
 					flag = true;
