@@ -17,13 +17,16 @@ int main() {
 	Max = arr[n] + arr[n - 1] + arr[n - 2] + arr[n - 3];
 	Min = arr[1] + arr[2] + arr[3] + arr[4];
 
-	if (w > Max || w < Min) {
+	if (w > Max || w < Min)
 		printf("NO\n");
-		return 0;
-	}
 
-	if (weight()) printf("YES\n");
-	else printf("NO\n");
+	else if (w == Max || w == Min)
+		printf("YES\n");
+
+	else {
+		if (weight()) printf("YES\n");
+		else printf("NO\n");
+	}
 
 	return 0;
 }
