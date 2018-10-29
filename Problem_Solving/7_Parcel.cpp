@@ -8,9 +8,9 @@ int arr[5001], check[800000];
 int w, n, Max, Min;
 
 int main() {
-	scanf_s("%d%d", &w, &n);
+	scanf("%d%d", &w, &n);
 	for (int i = 1; i <= n; i++)
-		scanf_s("%d", &arr[i]);
+		scanf("%d", &arr[i]);
 
 	sort(arr, arr + n + 1);
 
@@ -34,12 +34,12 @@ int main() {
 int weight() {
 	int a, b, c, d;
 	for (c = 3; c <= n - 1; c++) {
-		for (d = c + 1; d <= n; d++)
-			check[arr[c] + arr[d]] = 1;
-
 		b = c - 1;
 		for (a = 1; a <= b - 1; a++)
-			if (check[w - (arr[a] + arr[b])]) return 1;
+			check[arr[a] + arr[b]] = 1;
+		
+		for (d = c + 1; d <= n; d++)
+			if (w > arr[c] + arr[d] && check[w - (arr[c] + arr[d])]) return 1;
 	}
 	return 0;
 }
