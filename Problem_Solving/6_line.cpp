@@ -25,18 +25,18 @@ int main() {
 		if (f_line[0] == s_line[0]) Mx = -1;
 
 		if (Mx == -1) dist = 0;
-		else if (max(f_line[1], f_line[3]) >= min(s_line[1], s_line[3]) || min(f_line[1], f_line[3]) <= max(s_line[1], s_line[3]))
+		else if ((max(f_line[1], f_line[3]) >= min(s_line[1], s_line[3]) && max(f_line[1], f_line[3]) <= max(s_line[1], s_line[3])) || (min(f_line[1], f_line[3]) <= max(s_line[1], s_line[3]) && min(f_line[1], f_line[3]) >= min(s_line[1], s_line[3])))
 			dist = max(f_line[0], s_line[0]) - min(f_line[0], s_line[0]);
 
 		else if (Mx == 1 && max(f_line[1], f_line[3]) < min(s_line[1], s_line[3]))
 			dist = sqrt((s_line[0] - f_line[0])*(s_line[0] - f_line[0]) + (min(s_line[1], s_line[3]) - max(f_line[1], f_line[3]))*(min(s_line[1], s_line[3]) - max(f_line[1], f_line[3])));
-		
+
 		else if (Mx == 1 && min(f_line[1], f_line[3]) > max(s_line[1], s_line[3]))
 			dist = sqrt((s_line[0] - f_line[0])*(s_line[0] - f_line[0]) + (min(f_line[1], f_line[3]) - max(s_line[1], s_line[3]))*(min(f_line[1], f_line[3]) - max(s_line[1], s_line[3])));
-		
+
 		else if (Mx == 0 && max(s_line[1], s_line[3]) < min(f_line[1], f_line[3]))
 			dist = sqrt((f_line[0] - s_line[0])*(f_line[0] - s_line[0]) + (min(f_line[1], f_line[3]) - max(s_line[1], s_line[3]))*(min(f_line[1], f_line[3]) - max(s_line[1], s_line[3])));
-		
+
 		else if (Mx == 0 && min(s_line[1], s_line[3]) > max(f_line[1], f_line[3]))
 			dist = sqrt((f_line[0] - s_line[0])*(f_line[0] - s_line[0]) + (min(s_line[1], s_line[3]) - max(f_line[1], f_line[3]))*(min(s_line[1], s_line[3]) - max(f_line[1], f_line[3])));
 		break;
@@ -96,10 +96,10 @@ int main() {
 		if (My == -1) dist = 0;
 		else if (max(f_line[0], f_line[2]) >= min(s_line[0], s_line[2]) || min(f_line[0], f_line[2]) <= max(s_line[0], s_line[2]))
 			dist = max(f_line[1], s_line[1]) - min(f_line[1], s_line[1]);
-		
+
 		else if (My == 1 && max(f_line[0], f_line[2]) < min(s_line[0], s_line[3]))
 			dist = sqrt((s_line[1] - f_line[1])*(s_line[1] - f_line[1]) + (min(s_line[0], s_line[2]) - max(f_line[0], f_line[2]))*(min(s_line[0], s_line[2]) - max(f_line[0], f_line[2])));
-		
+
 		else if (My == 1 && min(f_line[0], f_line[2]) > max(s_line[0], s_line[2]))
 			dist = sqrt((s_line[1] - f_line[1])*(s_line[1] - f_line[1]) + (min(f_line[0], f_line[2]) - max(s_line[0], s_line[2]))*(min(f_line[0], f_line[2]) - max(s_line[0], s_line[2])));
 
