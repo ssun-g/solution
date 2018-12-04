@@ -66,15 +66,15 @@ int step_func() {
 	for (int i = init + 1; i <= end; i++) {
 		if (i == end && step[i].first <= b.first) {
 			if (step[i].first < b.first)
-				sum = (sum + ((b.first - step[i].first + 1) % 10007) * (b.second % 10007));
+				sum = (sum + ((b.first - step[i].first + 1) % 10007) * (b.second % 10007)) % 10007;
 			else sum = (sum + b.second) % 10007;
 		}
 		if (flag && a.first < step[i].first) {
-			sum = (sum + ((step[i].first - a.first) % 10007) * (a.second % 10007));
+			sum = (sum + ((step[i].first - a.first) % 10007) * (a.second % 10007)) % 10007;
 			flag = false;
 		}
 		else {
-			sum = (sum + ((step[i].first - step[i - 1].first) % 10007) * (step[i - 1].second % 10007));
+			sum = (sum + ((step[i].first - step[i - 1].first) % 10007) * (step[i - 1].second % 10007)) % 10007;
 		}
 	}
 	return sum;
