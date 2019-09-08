@@ -3,10 +3,10 @@
 using namespace std;
 
 int cover[4][3][2] = {
-	{{0,0},{0,1},{1,1}},
-	{{0,0},{0,1},{1,0}},
-	{{0,0},{1,0},{1,1}},
-	{{0,0},{1,0},{1,-1}}
+	{ { 0,0 },{ 0,1 },{ 1,1 } },
+	{ { 0,0 },{ 0,1 },{ 1,0 } },
+	{ { 0,0 },{ 1,0 },{ 1,1 } },
+	{ { 0,0 },{ 1,0 },{ 1,-1 } }
 };
 char board[21][21];
 int wcnt;
@@ -50,7 +50,7 @@ int main() {
 		int h, w;
 		wcnt = 0;
 		scanf("%d %d", &h, &w);
-		vector<vector<int> > v(h, vector<int>(w, 0));
+		vector<vector<int> > v(h, vector<int>(w, 0)); //배열 초기화 v[h][w]로 벡터 할당
 		for (int j = 0; j < h; j++) {
 			for (int k = 0; k < w; k++) {
 				scanf(" %c", &board[j][k]);
