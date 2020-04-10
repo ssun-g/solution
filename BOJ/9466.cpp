@@ -1,43 +1,48 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
 using namespace std;
 
-int t, n, ans;
-int arr[100001], visit[100001], cycle[100001];
+int result;
+int student[100001];
+int check[100001];
+int cycle[100001];
 
-int dfs(int start, int cur, int dep) {
-	visit[cur] = dep;
-	cycle[cur] = start;
-
-	int next = arr[cur];
-
-	if (visit[next] == 0) {
-		dfs(start, next, dep + 1);
+void Reset() {
+	result = 0;
+	for (int i = 0; i < 100001; i++) {
+		student[i] = 0;
+		check[i] = 0;
+		cycle[i] = 0;
 	}
-	else if (visit[next] != 0 && start == cycle[next])
-		return dep - visit[next] + 1;
-	else if (visit[next] != 0 && start != cycle[next])
-		return 0;
+}
+
+void dfs(int node) {
+	if (cycle[node] == 1 || check[node] == -1) return;
+	if (!check[node]) check[node] = 1;
+	else if (check[node] == 1) {
+		cycle[node] = 1;
+		result++;
+	}
+	dfs(student[node]);
+	check[node] = -1;
 }
 
 int main() {
-	scanf("%d", &t);
-	while (t--) {
+	int tc;
+	scanf("%d", &tc);
+	for (int i = 0; i < tc; i++) {
+		Reset();
+		int n;
 		scanf("%d", &n);
-
-		memset(visit, 0, sizeof(visit));
-		ans = 0;
-
-		for (int i = 1; i <= n; ++i)
-			scanf("%d", &arr[i]);
-
-		for (int i = 1; i <= n; ++i) {
-			if (visit[i] != 0)
-				continue;
-			if (visit[arr[i]] == 0)
-				ans += dfs(i, i, 1);
+		for (int j = 1; j <= n; j++) {
+			scanf("%d", &student[j]);
 		}
-		printf("%d\n", n - ans);
+
+		for (int j = 1; j <= n; j++) {
+			if (!check[j]) dfs(j);
+		}
+
+		printf("%d\n", n - result);
 	}
+
 	return 0;
 }
