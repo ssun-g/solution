@@ -6,8 +6,8 @@ using namespace std;
 string solution(int n) {
 	string answer = "";
 	for (int i = 1; i <= n; i++) {
-		if (i % 2) answer += "¼ö";
-		else answer += "¹Ú";
+		if (i % 2) answer += "ìˆ˜";
+		else answer += "ë°•";
 	}
 	return answer;
 }
