@@ -3,8 +3,6 @@
 #include<stack>
 using namespace std;
 
-double alpha[26];
-
 int main() {
 	int n;
 	int answer = 0;
