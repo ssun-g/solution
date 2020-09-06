@@ -3,8 +3,6 @@
 #include<cstdlib>
 using namespace std;
 
-class UnderflowException {};
-
 class ListNode {
 private:
 	int value;
@@ -12,7 +10,7 @@ private:
 
 public:
 	ListNode() {
-		this->next = NULL;
+		this->next = nullptr;
 	}
 	ListNode(int value, ListNode *next) {
 		this->value = value;
@@ -36,13 +34,13 @@ private:
 public:
 	Stack() {
 		this->size = 0;
-		this->tail = NULL;
+		this->tail = nullptr;
 	}
 
 	~Stack() {
 		ListNode *t1 = this->tail;
 		ListNode *t2;
-		while (t1 != NULL) {
+		while (t1 != nullptr) {
 			t2 = t1->get_next();
 			delete t1;
 			t1 = t2;
@@ -55,7 +53,6 @@ public:
 	}
 
 	int top() {
-		if (size == 0) throw UnderflowException();
 		return tail->get_value();
 	}
 
