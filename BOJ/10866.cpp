@@ -1,61 +1,52 @@
-#include<cstdio>
-#include<cstring>
+#include<iostream>
+#include<string>
 #include<deque>
 using namespace std;
-deque<int> dq;
-
-char comm[10];
 
 int main() {
-	int n, m;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		scanf(" %s", comm);
-		if (!strcmp(comm, "push_front")) {
-			scanf("%d", &m);
-			dq.push_front(m);
+	deque<int> dq;
+	int N;
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		string s;
+		cin >> s;
+		if (s == "push_front") {
+			int num;
+			cin >> num;
+			dq.push_front(num);
 		}
-		else if (!strcmp(comm, "push_back")) {
-			scanf("%d", &m);
-			dq.push_back(m);
+		else if (s == "push_back") {
+			int num;
+			cin >> num;
+			dq.push_back(num);
 		}
-		else if (!strcmp(comm, "pop_front")) {
-			if (dq.empty()) {
-				printf("-1\n");
-				continue;
+		else if (s == "pop_front") {
+			if (dq.empty()) cout << -1 << '\n';
+			else {
+				cout << dq.front() << '\n';
+				dq.pop_front();
 			}
-			printf("%d\n", dq.front());
-			dq.pop_front();
 		}
-		else if (!strcmp(comm, "pop_back")) {
-			if (dq.empty()) {
-				printf("-1\n");
-				continue;
+		else if (s == "pop_back") {
+			if (dq.empty()) cout << -1 << '\n';
+			else {
+				cout << dq.back() << '\n';
+				dq.pop_back();
 			}
-			printf("%d\n", dq.back());
-			dq.pop_back();
 		}
-		else if (!strcmp(comm, "size")) {
-			printf("%d\n", dq.size());
+		else if (s == "size") cout << dq.size() << '\n';
+		else if (s == "empty") {
+			if (dq.empty()) cout << "1" << '\n';
+			else cout << "0" << '\n';
 		}
-		else if (!strcmp(comm, "empty")) {
-			printf("%d\n", dq.empty());
+		else if (s == "front") {
+			if (dq.empty()) cout << "-1" << '\n';
+			else cout << dq.front() << '\n';
 		}
-		else if (!strcmp(comm, "front")) {
-			if (dq.empty()) {
-				printf("-1\n");
-				continue;
-			}
-			printf("%d\n", dq.front());
-		}
-		else if (!strcmp(comm, "back")) {
-			if (dq.empty()) {
-				printf("-1\n");
-				continue;
-			}
-			printf("%d\n", dq.back());
+		else if (s == "back") {
+			if (dq.empty()) cout << "-1" << '\n';
+			else cout << dq.back() << '\n';
 		}
 	}
-
 	return 0;
 }
