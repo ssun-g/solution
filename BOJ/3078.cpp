@@ -3,7 +3,7 @@
 #include<queue>
 using namespace std;
 
-queue<pair<string, int> > q[21];
+queue<int> q[21];
 
 long long good_friend(int N, int K) {
 	long long answer = 0;
@@ -12,11 +12,11 @@ long long good_friend(int N, int K) {
 		cin >> s;
 
 		int len = s.length();
-		while (!q[len].empty() && i - q[len].front().second > K) {
+		while (!q[len].empty() && i - q[len].front() > K) {
 			q[len].pop();
 		}
 		answer += q[len].size();
-		q[len].push(make_pair(s, i));
+		q[len].push(i);
 
 	}
 
