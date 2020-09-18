@@ -6,14 +6,16 @@ int tv[100001];
 int check[100001];
 
 void dfs(int hated) {
-	if (!check[hated]) {
-		check[hated] = 1;
-		if (tv[hated] != 0) {
-			answer++;
-			dfs(tv[hated]);
-		}
+	if (check[hated]) {
+		answer = -1;
+		return;
 	}
-	else answer = -1;
+
+	check[hated] = 1;
+	if (tv[hated] != 0) {
+		answer++;
+		dfs(tv[hated]);
+	}
 }
 
 int main() {
