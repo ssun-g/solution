@@ -1,36 +1,34 @@
 #include<cstdio>
-
 using namespace std;
 
-int mp[1000][1000];
-int check[1000];
-int n, m;
+int node[1001][1001];
+int check[1001];
 
-void dfs(int idx) {
-	check[idx] = 1;
-	for (int i = 0; i < n; i++) {
-		if (!check[i] && mp[idx][i]) dfs(i);
+void dfs(int init, int size) {
+	check[init] = 1;
+	for (int i = 1; i <= size; i++) {
+		if (!check[i] && node[init][i] == 1) dfs(i, size);
 	}
 }
 
 int main() {
-	int a, b;
-	int result = 0;
-	scanf("%d %d", &n, &m);
-	for (int i = 0; i < m; i++) {
+	int N, M;
+	int answer = 0;
+	scanf("%d %d", &N, &M);
+	for (int i = 0; i < M; i++) {
+		int a, b;
 		scanf("%d %d", &a, &b);
-		mp[a - 1][b - 1] = 1;
-		mp[b - 1][a - 1] = 1;
+		node[a][b] = 1;
+		node[b][a] = 1;
 	}
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 1; i <= N; i++) {
 		if (!check[i]) {
-			result++;
-			dfs(i);
+			answer++;
+			dfs(i, N);
 		}
 	}
-
-	printf("%d\n", result);
+	printf("%d\n", answer);
 
 	return 0;
 }
