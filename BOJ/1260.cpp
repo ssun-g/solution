@@ -1,63 +1,56 @@
 #include<cstdio>
-#include<algorithm>
-#include<vector>
 #include<queue>
-#include<cstring>
 using namespace std;
-vector<vector<int>> adj(1005);
+
+int node[1001][1001];
+int check[1001];
 queue<int> q;
 
-int n, m, v, a, b, check[1005];
-void dfs(int);
-void bfs(int);
-
-int main() {
-	scanf("%d%d%d", &n, &m, &v);
-	for (int i = 1; i <= m; i++) {
-		scanf("%d%d", &a, &b);
-		adj[a].push_back(b);
-		adj[b].push_back(a);
+void Reset() {
+	for (int i = 0; i < 1001; i++) {
+		check[i] = 0;
 	}
+}
 
+void dfs(int init, int n) {
+	check[init] = 1;
+	printf("%d ", init);
 	for (int i = 1; i <= n; i++) {
-		sort(adj[i].begin(), adj[i].end());
-	}
-
-	dfs(v);
-	printf("\n");
-	memset(check, 0, sizeof(check));
-	bfs(v);
-	printf("\n");
-
-	return 0;
-}
-
-void dfs(int index) {
-	check[index] = 1;
-	printf("%d ", index);
-
-	for (int i = 0; i < adj[index].size(); i++) {
-		int next = adj[index][i];
-		if (!check[next])
-			dfs(next);
+		if (!check[i] && node[init][i] == 1) dfs(i, n);
 	}
 }
 
-void bfs(int st) {
-	check[st] = 1;
-	q.push(st);
-
+void bfs(int init, int n) {
+	check[init] = 1;
+	q.push(init);
 	while (!q.empty()) {
-		int now = q.front();
+		int frt = q.front();
+		printf("%d ", frt);
 		q.pop();
-		printf("%d ", now);
 
-		for (int i = 0; i < adj[now].size(); i++) {
-			int next = adj[now][i];
-			if (!check[next]) {
-				check[next] = 1;
-				q.push(next);
+		for (int i = 1; i <= n; i++) {
+			if (!check[i] && node[frt][i] == 1) {
+				check[i] = 1;
+				q.push(i);
 			}
 		}
 	}
+}
+
+int main() {
+	int N, M, V;
+	scanf("%d %d %d", &N, &M, &V);
+	for (int i = 0; i < M; i++) {
+		int a, b;
+		scanf("%d %d", &a, &b);
+		node[a][b] = 1;
+		node[b][a] = 1;
+	}
+
+	dfs(V, N);
+	printf("\n");
+	Reset();
+	bfs(V, N);
+
+	return 0;
 }
