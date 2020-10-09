@@ -1,55 +1,54 @@
 #include<cstdio>
 using namespace std;
 
-int w, h;
+int w, h, answer;
+int Map[51][51];
+int check[51][51];
 int dx[8] = { -1, 0, 1, -1, 1, -1, 0, 1 };
 int dy[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };
-int check[50][50];
-int map[50][50];
 
 void Reset() {
-	for (int i = 0; i < 50; i++) {
-		for (int j = 0; j < 50; j++) {
+	answer = 0;
+	for (int i = 0; i < 51; i++) {
+		for (int j = 0; j < 51; j++) {
+			Map[i][j] = 0;
 			check[i][j] = 0;
-			map[i][j] = 0;
 		}
 	}
 }
 
-void go(int y, int x) {
+void dfs(int y, int x) {
 	check[y][x] = 1;
 	for (int i = 0; i < 8; i++) {
 		int nx = x + dx[i];
 		int ny = y + dy[i];
-		if (0 <= nx && nx < w && 0 <= ny && ny < h && !check[ny][nx] && map[ny][nx] == 1) go(ny, nx);
+		if (0 <= nx && nx < w && 0 <= ny && ny < h && !check[ny][nx] && Map[ny][nx] == 1)
+			dfs(ny, nx);
 	}
 }
 
 int main() {
 	while (true) {
+		Reset();
 		scanf("%d %d", &w, &h);
 		if (w == 0 && h == 0) break;
-		Reset();
-		int cnt = 0;
+
 		for (int i = 0; i < h; i++) {
 			for (int j = 0; j < w; j++) {
-				scanf("%d", &map[i][j]);
+				scanf("%d", &Map[i][j]);
 			}
 		}
 
 		for (int i = 0; i < h; i++) {
 			for (int j = 0; j < w; j++) {
-				if (!check[i][j] && map[i][j] == 1) {
-					go(i, j);
-					cnt++;
+				if (!check[i][j] && Map[i][j] == 1) {
+					dfs(i, j);
+					answer++;
 				}
 			}
 		}
-		printf("%d\n", cnt);
+		printf("%d\n", answer);
 	}
-
-
-
 
 	return 0;
 }
