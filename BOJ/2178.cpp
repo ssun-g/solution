@@ -2,45 +2,41 @@
 #include<queue>
 using namespace std;
 
-int dr[4] = { 0, 0, 1, -1 };
-int dc[4] = { 1, -1, 0, 0 };
-int arr[105][105];
-int check[105][105];
+queue<pair<int, int> > qp;
+int N, M;
+int maze[101][101];
+int check[101][101];
+int dx[4] = { 0, 0, -1, 1 };
+int dy[4] = { -1, 1, 0, 0 };
 
-typedef struct {
-	int r, c, cnt;
-}node;
-
-int main() {
-	int n, m;
-	scanf("%d%d", &n, &m);
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			scanf("%1d", &arr[i][j]);
-		}
-	}
-	queue<node> q;
-	q.push({ 0,0,1 });
-	check[0][0] = 1;
-	
-	int ans = 0;
-	while (!q.empty()) {
-		node u = q.front();
-		if (u.r == n - 1 && u.c == m - 1) {
-			ans = u.cnt;
-			break;
-		}
-		q.pop();
-		for (int k = 0; k < 4; k++) {
-			int nr = u.r + dr[k];
-			int nc = u.c + dc[k];
-			if (0 <= nr && nr < n && 0 <= nc && nc < m && arr[nr][nc] && !check[nr][nc]) {
-				check[nr][nc] = 1;
-				q.push({ nr,nc,u.cnt + 1 });
+void bfs() {
+	while (!qp.empty()) {
+		int x = qp.front().second;
+		int y = qp.front().first;
+		check[y][x] = 1;
+		qp.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = x + dx[i];
+			int ny = y + dy[i];
+			if (0 < nx && nx <= M && 0 < ny && ny <= N && !check[ny][nx] && maze[ny][nx] == 1) {
+				maze[ny][nx] = maze[y][x] + 1;
+				qp.push(make_pair(ny, nx));
 			}
 		}
 	}
-	printf("%d", ans);
+}
+
+int main() {
+	scanf("%d %d", &N, &M);
+	for (int i = 1; i <= N; i++) {
+		for (int j = 1; j <= M; j++) {
+			scanf("%1d", &maze[i][j]);
+		}
+	}
+
+	qp.push(make_pair(1, 1));
+	bfs();
+	printf("%d\n", maze[N][M]);
 
 	return 0;
 }

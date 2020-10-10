@@ -1,61 +1,60 @@
 #include<cstdio>
-#include<algorithm>
 #include<queue>
+#include<algorithm>
 using namespace std;
-queue<pair<int, int>> q;
 
-int m, n, Max, cnt, cnt2;
-int dr[4] = { 0, 0, 1, -1 };
-int dc[4] = { 1, -1, 0, 0 };
-int check[1000][1000];
-int arr[1000][1000];
+queue<pair<int, int> > qp;
+int M, N;
+int tomato[1001][1001];
+int dx[4] = { 0, 0, -1, 1 };
+int dy[4] = { -1, 1, 0, 0 };
 
-void bfs();
-
-int main() {
-	scanf("%d%d", &m, &n);
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			scanf("%d", &arr[i][j]);
-			if (arr[i][j] == -1) cnt++;
-			if (arr[i][j] == 1) {
-				q.push({ i,j });
-				check[i][j] = 1;
-			}
-		}
-	}
-	bfs();
-
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			if (arr[i][j] == 1) cnt2++;
-		}
-	}
-
-	if (cnt + cnt2 == n * m) {
-		printf("%d\n", Max - 1);
-	}
-	else {
-		printf("-1\n");
-	}
-
-	return 0;
-}
 
 void bfs() {
-	while (!q.empty()) {
-		int r = q.front().first;
-		int c = q.front().second;
-		q.pop();
-		Max = max(Max, check[r][c]);
+	while (!qp.empty()) {
+		int x = qp.front().first;
+		int y = qp.front().second;
+		qp.pop();
 		for (int i = 0; i < 4; i++) {
-			int nr = r + dr[i];
-			int nc = c + dc[i];
-			if (0 <= nr && nr < n && 0 <= nc && nc < m && arr[nr][nc] == 0 && !check[nr][nc]) {
-				arr[nr][nc] = 1;
-				check[nr][nc] = check[r][c] + 1;
-				q.push({ nr,nc });
+			int nx = x + dx[i];
+			int ny = y + dy[i];
+			if (0 <= nx && nx < M && 0 <= ny && ny < N && tomato[ny][nx] == 0) {
+				tomato[ny][nx] = tomato[y][x] + 1;
+				qp.push(make_pair(nx, ny));
 			}
 		}
 	}
+}
+
+int main() {
+	int answer = -1;
+	scanf("%d %d", &M, &N);
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			scanf("%d", &tomato[i][j]);
+		}
+	}
+
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			if (tomato[i][j] == 1) {
+				qp.push(make_pair(j, i));
+			}
+		}
+	}
+
+	bfs();
+
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			if (tomato[i][j] == 0) {
+				printf("-1\n");
+				return 0;
+			}
+			else answer = max(answer, tomato[i][j]);
+		}
+	}
+	printf("%d\n", answer - 1);
+
+	return 0;
 }

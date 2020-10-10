@@ -1,43 +1,34 @@
 #include<cstdio>
-#include<stack>
+#include<vector>
 using namespace std;
-stack<pair<int, int>> s[2];
 
-int parent[100001] = { 0 };
-int n;
-int a, b;
-int idx = 0;
+vector<int> v[100001];
+int check[100001];
+int parent[100001];
 
-int main(void) {
-	scanf("%d", &n);
-	parent[1] = 1;
-	for (int i = 1; i < n; i++) {
+void dfs(int init) {
+	check[init] = 1;
+	for (int i = 0; i < v[init].size(); i++) {
+		if (!check[v[init][i]]) {
+			parent[v[init][i]] = init;
+			dfs(v[init][i]);
+		}
+	}
+}
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	for (int i = 0; i < N - 1; i++) {
+		int a, b;
 		scanf("%d %d", &a, &b);
-		if (parent[a]) parent[b] = a;
-		else if (parent[b]) parent[a] = b;
-		else s[idx].push({ a, b });
-	}
-	while (!s[0].empty() || !s[1].empty()) {
-		auto t = s[idx].top();
-		a = t.first;
-		b = t.second;
-		s[idx].pop();
-
-		if (parent[a]) {
-			parent[b] = a;
-		}
-		else if (parent[b]) {
-			parent[a] = b;
-		}
-		else {
-			s[1 - idx].push({ a, b });
-		}
-		if (s[idx].empty()) {
-			idx = 1 - idx;
-		}
+		v[a].push_back(b);
+		v[b].push_back(a);
 	}
 
-	for (int i = 2; i <= n; i++) {
+	dfs(1);
+
+	for (int i = 2; i <= N; i++) {
 		printf("%d\n", parent[i]);
 	}
 
