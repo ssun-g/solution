@@ -2,47 +2,39 @@
 #include<algorithm>
 using namespace std;
 
-void wifi(int);
-
-int arr[100000];
-int n, k, ans, dist, cnt;
+int house[200001];
 
 int main() {
-	scanf("%d%d", &n, &k);
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &arr[i]);
+	int N, C;
+	int answer = -1;
+	scanf("%d %d", &N, &C);
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &house[i]);
 	}
-	sort(arr, arr + n);
-	wifi(k);
+	sort(house, house + N);
 
-	return 0;
-}
-
-void wifi(int num) {
-	if (num == 2) {
-		printf("%d\n", arr[n - 1] - arr[0]);
-		return;
-	}
-	int left = 1;
-	int right = arr[n-1] - arr[0];
-	int mid = (left + right) / 2;
-
+	int left = 0;
+	int right = house[N - 1] - house[0];
+	int mid;
 	while (left <= right) {
-		int start = arr[0];
-		cnt = 1;
-		mid = (left + right) / 2; 
-		for (int i = 1; i < n; i++) {
-			dist = arr[i] - start;
+		int cnt = 1;
+		mid = (left + right) / 2;
+		int cur = house[0];
+		for (int i = 1; i < N; i++) {
+			int dist = house[i] - cur;
 			if (mid <= dist) {
 				cnt++;
-				start = arr[i];
+				cur = house[i];
 			}
 		}
-		if (cnt >= k) {
-			ans = mid;
+		if (cnt < C) right = mid - 1;
+		else if (cnt >= C) {
 			left = mid + 1;
+			answer = max(answer, mid);
 		}
-		else right = mid - 1;
+
 	}
-	printf("%d\n", ans);
+	printf("%d\n", answer);
+
+	return 0;
 }
