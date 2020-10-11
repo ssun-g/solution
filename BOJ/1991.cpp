@@ -1,54 +1,46 @@
-#include <cstdio>
-#include <vector>
+#include<iostream>
 using namespace std;
-vector<pair<char, char>> arr[26];
 
-void preorder(int);
-void inorder(int);
-void postorder(int);
+char tree[27][2];
+
+void preOrder(char cur) {
+	if (cur == '.') return;
+	cout << cur;
+	preOrder(tree[cur - 'A'][0]);
+	preOrder(tree[cur - 'A'][1]);
+}
+
+void inOrder(char cur) {
+	if (cur == '.') return;
+	inOrder(tree[cur - 'A'][0]);
+	cout << cur;
+	inOrder(tree[cur - 'A'][1]);
+}
+
+void postOrder(char cur) {
+	if (cur == '.') return;
+	postOrder(tree[cur - 'A'][0]);
+	postOrder(tree[cur - 'A'][1]);
+	cout << cur;
+}
 
 int main() {
-	int n;
-	char node, left, right;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		scanf(" %c %c %c", &node, &left, &right);
-		arr[node - 'A'].push_back(make_pair(left, right));
+	int N;
+	cin >> N;
+
+	for (int i = 0; i < N; i++) {
+		char cur, lc, rc;
+		cin >> cur >> lc >> rc;
+		tree[cur - 'A'][0] = lc;
+		tree[cur - 'A'][1] = rc;
 	}
 
-	preorder('A');
-	printf("\n");
-	inorder('A');
-	printf("\n");
-	postorder('A');
-	printf("\n");
+	preOrder('A');
+	cout << '\n';
+	inOrder('A');
+	cout << '\n';
+	postOrder('A');
+	cout << '\n';
 
 	return 0;
-}
-
-void preorder(int root) {
-	char leftchild = arr[root - 'A'].front().first;
-	char rightchild = arr[root - 'A'].front().second;
-
-	printf("%c", root);
-	if (leftchild != '.') preorder(leftchild);
-	if (rightchild != '.') preorder(rightchild);
-}
-
-void inorder(int root) {
-	char leftchild = arr[root - 'A'].front().first;
-	char rightchild = arr[root - 'A'].front().second;
-
-	if (leftchild != '.') inorder(leftchild);
-	printf("%c", root);
-	if (rightchild != '.') inorder(rightchild);
-}
-
-void postorder(int root) {
-	char leftchild = arr[root - 'A'].front().first;
-	char rightchild = arr[root - 'A'].front().second;
-
-	if (leftchild != '.') postorder(leftchild);
-	if (rightchild != '.') postorder(rightchild);
-	printf("%c", root);
 }
