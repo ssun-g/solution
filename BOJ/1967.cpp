@@ -36,10 +36,12 @@ int main() {
 		vp[b].push_back(make_pair(a, cost));
 	}
 
-	dfs(1, 0);
+	dfs(1, 0); // find node
+
 	length = 0;
 	Reset();
-	dfs(node, 0);
+
+	dfs(node, 0); // find diameter
 	printf("%d\n", length);
 
 	return 0;
