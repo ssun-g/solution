@@ -1,49 +1,38 @@
 #include<cstdio>
 #include<algorithm>
-#define MAX 500000
 using namespace std;
 
-int num[MAX];
+int card[500001];
 
 int main() {
-	int n, m, cmp, cnt = 0;
-	int left;
-	int right;
-	int mid;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &num[i]);
+	int N;
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &card[i]);
 	}
-	sort(num, num + n);
+	sort(card, card + N);
 
-	scanf("%d", &m);
-	for (int i = 0; i < m; i++) {
-		scanf("%d", &cmp);
-		left = 0;
-		right = n - 1;
-		while (true) {
+	int M;
+	scanf("%d", &M);
+	for (int i = 0; i < M; i++) {
+		int c;
+		scanf("%d", &c);
+
+		int left = 0;
+		int right = N - 1;
+		int mid;
+		bool flag = false;
+		while (left <= right) {
 			mid = (left + right) / 2;
-			if (left > right) {
-				printf("0 ");
-				break;
-			}
-			if (cmp == num[mid]) {
-				if (i == m - 1) {
-					printf("1");
-					break;
-				}
-
-				printf("1 ");
-				break;
-			}
-			else if (cmp > num[mid]) {
-				left = mid + 1;
-			}
+			if (card[mid] < c) left = mid + 1;
+			else if (card[mid] > c) right = mid - 1;
 			else {
-				right = mid - 1;
+				flag = true;
+				break;
 			}
 		}
-		cnt++;
+		if (flag) printf("1 ");
+		else printf("0 ");
 	}
 
 	return 0;

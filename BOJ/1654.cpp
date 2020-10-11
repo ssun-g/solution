@@ -2,35 +2,33 @@
 #include<algorithm>
 using namespace std;
 
-int len[10000];
+int line[10001];
 
 int main() {
-	int k, n, sum = 0;
-	long long left = 1;
-	long long right = (1 << 31) - 1;
-	long long mid = (left + right) / 2;
-	scanf("%d%d", &k, &n);
-	for (int i = 0; i < k; i++) {
-		scanf("%d", &len[i]);
+	int K, N;
+	long long answer = -1;
+	scanf("%d %d", &K, &N);
+	for (int i = 0; i < K; i++) {
+		scanf("%d", &line[i]);
 	}
-	sort(len, len + k);
+	sort(line, line + K);
 
+	long long left = 0;
+	long long right = (1 << 31) - 1;
+	long long mid;
 	while (left <= right) {
 		mid = (left + right) / 2;
-		sum = 0;
-		for (int i = 0; i < k; i++) {
-			sum += (len[i] / mid);
+		long long sum = 0;
+		for (int i = 0; i < K; i++) {
+			sum += line[i] / mid;
 		}
-		if (sum < n) {
-			right = mid - 1;
-		}
-		else {
+		if (sum < N) right = mid - 1;
+		else if (sum >= N) {
 			left = mid + 1;
+			answer = max(answer, mid);
 		}
 	}
-	left -= 1;
-	printf("%lld\n", left);
+	printf("%lld\n", answer);
 
 	return 0;
 }
-

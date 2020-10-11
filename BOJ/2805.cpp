@@ -1,40 +1,34 @@
 #include<cstdio>
 #include<algorithm>
-#define MAX 1000000
 using namespace std;
 
-long long tree[MAX];
-long long Max, sum;
+int tree[1000001];
 
 int main() {
-	long long n, m;
-	long long left, right, mid;
-	scanf("%lld%lld", &n, &m);
-	for (int i = 0; i < n; i++) {
-		scanf("%lld", &tree[i]);
-		if (tree[i] > Max)
-			Max = tree[i];
+	int N, M;
+	long long answer = -1;
+	scanf("%d %d", &N, &M);
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &tree[i]);
 	}
+	sort(tree, tree + N);
 
-	left = 0;
-	right = Max;
-
+	long long left = 0;
+	long long right = tree[N - 1];
+	long long mid;
 	while (left <= right) {
+		long long sum = 0;
 		mid = (left + right) / 2;
-		sum = 0;
-		for (int i = 0; i < n; i++) {
-			if (tree[i] > mid) {
-				sum += tree[i] - mid;
-			}
+		for (int i = 0; i < N; i++) {
+			if (mid < tree[i]) sum += tree[i] - mid;
 		}
-		if (sum < m) {
-			right = mid - 1;
-		}
-		else {
+		if (sum < M) right = mid - 1;
+		else if (sum >= M) {
 			left = mid + 1;
+			answer = max(answer, mid);
 		}
 	}
-	printf("%lld", right);
+	printf("%lld\n", answer);
 
 	return 0;
 }
