@@ -1,6 +1,5 @@
 #include<cstdio>
 #include<vector>
-#include<utility>
 using namespace std;
 
 vector<pair<int, int> > vp[10001];
@@ -37,12 +36,10 @@ int main() {
 		vp[b].push_back(make_pair(a, cost));
 	}
 
-	dfs(1, 0); // find node
-
+	dfs(1, 0);
 	length = 0;
 	Reset();
-
-	dfs(node, 0); // find diameter
+	dfs(node, 0);
 	printf("%d\n", length);
 
 	return 0;
