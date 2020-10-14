@@ -1,38 +1,24 @@
-#include<stdio.h>
+#include<cstdio>
+#include<cmath>
+using namespace std;
 
-int count(int);
-void move(int from, int to);
-void hanoi(int n, int from, int by, int to);
+void hanoi(int from, int to, int by, int n) {
+	if (n == 1) {
+		printf("%d %d\n", from, to);
+		return;
+	}
+	hanoi(from, by, to, n - 1);
+	printf("%d %d\n", from, to);
+	hanoi(by, to, from, n - 1);
+}
 
-int main(void) {
-	int n;
-	scanf("%d", &n);
-	printf("%d\n", count(n));
-	hanoi(n, 1, 2, 3);
+int main() {
+	int N;
+	scanf("%d", &N);
+
+	int num = pow(2, N) - 1;
+	printf("%d\n", num);
+	hanoi(1, 3, 2, N);
 
 	return 0;
-}
-
-int count(int num) {
-	int d = 1;
-	if (num == 1) return 1;
-	else {
-		for (int i = 1; i <= num; i++)
-			d *= 2;
-		return d - 1;
-	}
-}
-
-void move(int from, int to) {
-	printf("%d %d\n", from, to);
-}
-
-void hanoi(int n, int from, int by, int to) {
-	if (n == 1)
-		move(from, to);
-	else {
-		hanoi(n - 1, from, to, by);
-		move(from, to);
-		hanoi(n - 1, by, from, to);
-	}
 }
