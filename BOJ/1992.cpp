@@ -1,45 +1,43 @@
 #include<cstdio>
 using namespace std;
 
-int arr[65][65];
-void go(int, int, int);
+int quad[65][65];
 
-int main() {
-	int n;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			scanf("%1d", &arr[i][j]);
-		}
-	}
-	go(0, 0, n);
-
-	return 0;
-}
-
-void go(int x, int y, int size) {
-	int temp = arr[x][y];
-	bool flag = true;
-	for (int i = x; i < x + size; i++) {
-		if (!flag)
-			break;
-
-		for (int j = y; j < y + size; j++) {
-			if (temp != arr[i][j]) {
-				flag = false;
+void dnc(int y, int x, int size) {
+	int temp = quad[y][x];
+	bool isEqual = true;
+	for (int i = y; i < y + size; i++) {
+		for (int j = x; j < x + size; j++) {
+			if (temp != quad[i][j]) {
+				isEqual = false;
 				break;
 			}
 		}
+		if (!isEqual) break;
 	}
-	if (flag) {
-		printf("%d", arr[x][y]);
+
+	if (isEqual) {
+		printf("%d", temp);
 		return;
 	}
 
 	printf("(");
-	go(x, y, size / 2);
-	go(x, y + (size / 2), size / 2);
-	go(x + (size / 2), y, size / 2);
-	go(x + (size / 2), y + (size / 2), size / 2);
+	dnc(y, x, size / 2);
+	dnc(y, x + size / 2, size / 2);
+	dnc(y + size / 2, x, size / 2);
+	dnc(y + size / 2, x + size / 2, size / 2);
 	printf(")");
+}
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			scanf("%1d", &quad[i][j]);
+		}
+	}
+	dnc(0, 0, N);
+
+	return 0;
 }

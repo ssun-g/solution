@@ -1,8 +1,46 @@
 #include<cstdio>
 using namespace std;
 
-int arr[2188][2188], mcnt, zcnt, cnt;
-void go(int, int, int);
+int ncnt, zcnt, pcnt;
+int arr[2188][2188];
+
+void dnc(int y, int x, int size) {
+	int temp = arr[y][x];
+	bool isEqual = true;
+
+	for (int i = y; i < y + size; i++) {
+		for (int j = x; j < x + size; j++) {
+			if (temp != arr[i][j]) {
+				isEqual = false;
+				break;
+			}
+		}
+		if (!isEqual) break;
+	}
+
+	if (isEqual && temp == -1) {
+		ncnt++;
+		return;
+	}
+	else if (isEqual && temp == 0) {
+		zcnt++;
+		return;
+	}
+	else if (isEqual && temp == 1) {
+		pcnt++;
+		return;
+	}
+
+	dnc(y, x, size / 3);
+	dnc(y, x + size / 3, size / 3);
+	dnc(y, x + 2 * (size / 3), size / 3);
+	dnc(y + size / 3, x, size / 3);
+	dnc(y + size / 3, x + size / 3, size / 3);
+	dnc(y + size / 3, x + 2 * (size / 3), size / 3);
+	dnc(y + 2 * (size / 3), x, size / 3);
+	dnc(y + 2 * (size / 3), x + size / 3, size / 3);
+	dnc(y + 2 * (size / 3), x + 2 * (size / 3), size / 3);
+}
 
 int main() {
 	int n;
@@ -12,47 +50,12 @@ int main() {
 			scanf("%d", &arr[i][j]);
 		}
 	}
-	go(0, 0, n);
-	printf("%d\n%d\n%d", mcnt, zcnt, cnt);
+
+	dnc(0, 0, n);
+
+	printf("%d\n", ncnt);
+	printf("%d\n", zcnt);
+	printf("%d\n", pcnt);
 
 	return 0;
-}
-
-void go(int x, int y, int size) {
-	int temp = arr[x][y];
-	bool flag = true;
-
-	for (int i = x; i < x + size; i++) {
-		if (!flag)
-			break;
-		for (int j = y; j < y + size; j++) {
-			if (temp != arr[i][j]) {
-				flag = false;
-				break;
-			}
-		}
-	}
-
-	if (flag && temp == -1) {
-		mcnt++;
-		return;
-	}
-	else if (flag && temp == 0) {
-		zcnt++;
-		return;
-	}
-	else if (flag && temp == 1) {
-		cnt++;
-		return;
-	}
-
-	go(x, y, size / 3);
-	go(x, y + (size / 3), size / 3);
-	go(x, y + (2 * (size / 3)), size / 3);
-	go(x + (size / 3), y, size / 3);
-	go(x + (size / 3), y + (size / 3), size / 3);
-	go(x + (size / 3), y + (2 * (size / 3)), size / 3);
-	go(x + (2 * (size / 3)), y, size / 3);
-	go(x + (2 * (size / 3)), y + (size / 3), size / 3);
-	go(x + (2 * (size / 3)), y + (2 * (size / 3)), size / 3);
 }
