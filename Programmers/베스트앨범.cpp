@@ -1,56 +1,48 @@
 #include <string>
 #include <vector>
-#include <utility>
-#include <map>
 #include <algorithm>
+#include <unordered_map>
 
 using namespace std;
 
-bool comp(pair<int, int> a, pair<int, int> b) {
-	return a.first > b.first;
+bool comp(pair<string, int> a, pair<string, int> b) {
+	return a.second > b.second;
 }
 
-bool comp2(pair<string, int> a, pair<string, int> b) {
-	return a.second > b.second;
+bool comp2(pair<int, int> a, pair<int, int> b) {
+	return a.first > b.first;
 }
 
 vector<int> solution(vector<string> genres, vector<int> plays) {
 	vector<int> answer;
-	vector<pair<int, int>> v;
-	vector<pair<string, int>> vec;
-	map<string, int> m;
-	map<string, int> ::iterator it;
-	m.insert(pair<string, int>(genres[0], plays[0]));
-	for (int i = 1; i < genres.size(); i++) {
-		it = m.find(genres[i]);
-		if (it != m.end()) it->second += plays[i];
-		else m.insert(pair<string, int>(genres[i], plays[i]));
+	vector<pair<int, int> > vp;
+	vector<pair<string, int> > tmp;
+	unordered_map<string, int> ump;
+
+	for (int i = 0; i < genres.size(); i++) {
+		ump[genres[i]] += plays[i];
 	}
 
-	for (it = m.begin(); it != m.end(); it++) {
-		vec.push_back(pair<string, int>(it->first, it->second));
+	for (auto it = ump.begin(); it != ump.end(); it++) {
+		tmp.push_back(make_pair(it->first, it->second));
 	}
-	sort(vec.begin(), vec.end(), comp2);
+	sort(tmp.begin(), tmp.end(), comp);
 
-	for (int j = 0; j < vec.size(); j++) {
-		int MAX = -1;
-		int cnt = 0;
-		bool flag = false;
-		for (int i = 0; i < genres.size(); i++) {
-			if (vec[j].first == genres[i]) {
-				v.push_back(pair<int, int>(plays[i], i));
+	for (int i = 0; i < tmp.size(); i++) {
+		for (int j = 0; j < genres.size(); j++) {
+			if (tmp[i].first == genres[j]) {
+				vp.push_back(make_pair(plays[j], j));
 			}
 		}
+		sort(vp.begin(), vp.end(), comp2);
 
-		sort(v.begin(), v.end(), comp);
-		for (int i = 0; i < v.size(); i++) {
-			if (flag) cnt = -1;
-			if (v.size() < 2) flag = true;
+		int cnt = 0;
+		for (int i = 0; i < vp.size(); i++) {
 			if (cnt == 2) break;
-			answer.push_back(v[i].second);
+			answer.push_back(vp[i].second);
 			cnt++;
 		}
-		v.clear();
+		vp.clear();
 	}
 
 	return answer;
