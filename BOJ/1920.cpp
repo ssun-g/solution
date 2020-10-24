@@ -1,48 +1,38 @@
 #include<cstdio>
 #include<algorithm>
-#define MAX 100000
 using namespace std;
 
-int num[MAX], cmp[MAX];
+int num[100001];
 
 int main() {
-	int n, m, cnt = 0;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
+	int N;
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++) {
 		scanf("%d", &num[i]);
 	}
-	sort(num, num + n);
+	sort(num, num + N);
 
-	scanf("%d", &m);
-	for (int i = 0; i < m; i++) {
-		scanf("%d", &cmp[i]);
-	}
+	int M;
+	scanf("%d", &M);
+	for (int i = 0; i < M; i++) {
+		int search;
+		scanf("%d", &search);
 
-	int left;
-	int right;
-	int mid;
-
-	for (int i = 0; i < m; i++) {
-		left = 0;
-		right = n - 1;
-		while (true) {
+		int left = 0;
+		int right = N - 1;
+		int mid;
+		bool isHave = false;
+		while (left <= right) {
 			mid = (left + right) / 2;
-			if (left > right) {
-				printf("0\n");
-				break;
-			}
-			if (cmp[cnt] == num[mid]) {
-				printf("1\n");
-				break;
-			}
-			else if (cmp[cnt] > num[mid]) {
-				left = mid + 1;
-			}
+			if (num[mid] < search) left = mid + 1;
+			else if (num[mid] > search) right = mid - 1;
 			else {
-				right = mid - 1;
+				isHave = true;
+				break;
 			}
 		}
-		cnt++;
+		if (isHave) printf("1\n");
+		else printf("0\n");
 	}
 
 	return 0;
