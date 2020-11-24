@@ -1,3 +1,10 @@
+/*
+첫 번째 배열의 부분 합을 모두 구한후 map에 저장한다.
+그 후 두 번째 배열의 부분 합을 구하면서 (target - sum)값이 map에 존재하면
+그 개수만큼 answer값을 증가시켜 준다.
+(target-sum)값이 존재한다는 것은 첫번 째 배열의 부분 합과 두 번째 배열의 부분합을
+더해 target값을 완성할 수 있다는 뜻.
+*/
 #include<iostream>
 #include<unordered_map>
 using namespace std;
@@ -22,6 +29,7 @@ int main() {
 		sum_B += B[i];
 	}
 
+	// partial sum of first array
 	for (int i = 0; i < n; i++) {
 		int sum = A[i];
 		for (int j = i + 1; j < n; j++) {
@@ -31,6 +39,8 @@ int main() {
 		ump[sum]++;
 	}
 
+	// partial sum of second array
+	// find the target
 	for (int i = 0; i < m; i++) {
 		int sum = B[i];
 		for (int j = i + 1; j < m; j++) {
