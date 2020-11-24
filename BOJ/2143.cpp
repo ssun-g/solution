@@ -1,12 +1,12 @@
 #include<iostream>
 #include<algorithm>
-#include<map>
+#include<unordered_map>
 using namespace std;
 
 int A[1001], B[1001];
 
 int main() {
-	map<int, int> mp;
+	unordered_map<int, int> ump;
 	long long T;
 	long long sum_A = 0, sum_B = 0;
 	long long answer = 0;
@@ -26,19 +26,19 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		int sum = A[i];
 		for (int j = i + 1; j < n; j++) {
-			mp[sum]++;
+			ump[sum]++;
 			sum += A[j];
 		}
-		mp[sum]++;
+		ump[sum]++;
 	}
 
 	for (int i = 0; i < m; i++) {
 		int sum = B[i];
 		for (int j = i + 1; j < m; j++) {
-			answer += mp[T - sum];
+			answer += ump[T - sum];
 			sum += B[j];
 		}
-		answer += mp[T - sum];
+		answer += ump[T - sum];
 	}
 	cout << answer << '\n';
 
