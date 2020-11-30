@@ -47,7 +47,6 @@
 [stalink6]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_7
 [stalink7]: https://github.com/ssun-g/solution/blob/master/HackerRank/10_Days_of_Statistics/Day_8/Day_8_Least_Square_Regression_Line.cpp
 [stalink8]: https://github.com/ssun-g/solution/blob/master/HackerRank/10_Days_of_Statistics/Day_9/Day_9_Multiple_Linear_Regression.cpp
-<hr/>
 
 #### 30 Days of Code
 * __Day 00__: [code][colink1]
@@ -111,7 +110,6 @@
 [colink28]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_27_Testing.cpp
 [colink29]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_28_RegEx%2C_Patterns%2C_and_Intro_to_Databases.cpp
 [colink30]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_29_Bitwise_AND.cpp
-<hr/>
 
 #### Algorithms(Warmup)
 * __Compare the Triplets__: [code][wulink1]
