@@ -18,7 +18,16 @@
 추후 업데이트
 
 ## Hackerrank
-추후 업데이트
+#### 10 Days of Statistics
+* __Day 0__:           
+* __Day 1__:           
+* __Day 4__:          
+* __Day 5__:              
+* __Day 6__:           
+* __Day 7__:            
+* __Day 8__:         
+* __Day 9__:         
+
 
 ## Programmers
 추후 업데이트
