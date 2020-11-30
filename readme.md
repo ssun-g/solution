@@ -9,6 +9,7 @@
 [allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
 [allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/clocksync.cpp
 [allink3]: https://github.com/ssun-g/solution/blob/master/Algospot/picnic.cpp
+<hr/>
 
 ## [AtCoder][atcoderlink]
 [atcoderlink]: https://atcoder.jp/
@@ -17,12 +18,13 @@
 * __171__ : [code][abclink1]
 
 [abclink1]: https://github.com/ssun-g/solution/tree/master/AtCoder/ABC/171
+<hr/>
 
 ## [BOJ (Baekjoon Online Judge)][bojlink]
 [bojlink]: https://www.acmicpc.net/
 
 추후 업데이트
-
+<hr/>
 
 ## [Hackerrank][hackerranklink]
 [hackerranklink]: https://www.hackerrank.com/
@@ -115,12 +117,13 @@
 * __Compare the Triplets__: [code][wulink1]
 
 [wulink1]: https://github.com/ssun-g/solution/blob/master/HackerRank/Algorithms/Warmup/Compare_the_Triplets.cpp
+<hr/>
 
 ## [Programmers][programmerslink]
 [programmerslink]: https://programmers.co.kr/
 
 추후 업데이트
-
+<hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
 [swealink]: https://swexpertacademy.com/main/main.do
