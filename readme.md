@@ -2,9 +2,9 @@
 ## [Algospot][algospotlink]
 [algospotlink]: https://algospot.com/
 
-* __boardcover__: [code][allink1]      
-* __clocksync__: [code][allink2]       
-* __picnic__: [code][allink3]
+* __boardcover__ : [code][allink1]      
+* __clocksync__ : [code][allink2]       
+* __picnic__ : [code][allink3]
 
 [allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
 [allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/clocksync.cpp
@@ -30,14 +30,14 @@
 [hackerranklink]: https://www.hackerrank.com/
 
 #### 10 Days of Statistics
-* __Day 0__: [code][stalink1]           
-* __Day 1__: [code][stalink2]          
-* __Day 4__: [code][stalink3]         
-* __Day 5__: [code][stalink4]             
-* __Day 6__: [code][stalink5]          
-* __Day 7__: [code][stalink6]           
-* __Day 8__: [code][stalink7]        
-* __Day 9__: [code][stalink8]          
+* __Day 0__ : [code][stalink1]           
+* __Day 1__ : [code][stalink2]          
+* __Day 4__ : [code][stalink3]         
+* __Day 5__ : [code][stalink4]             
+* __Day 6__ : [code][stalink5]          
+* __Day 7__ : [code][stalink6]           
+* __Day 8__ : [code][stalink7]        
+* __Day 9__ : [code][stalink8]          
 
 [stalink1]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_0
 [stalink2]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_1
@@ -49,36 +49,36 @@
 [stalink8]: https://github.com/ssun-g/solution/blob/master/HackerRank/10_Days_of_Statistics/Day_9/Day_9_Multiple_Linear_Regression.cpp
 
 #### 30 Days of Code
-* __Day 00__: [code][colink1]
-* __Day 01__: [code][colink2]
-* __Day 02__: [code][colink3]
-* __Day 03__: [code][colink4]
-* __Day 04__: [code][colink5]
-* __Day 05__: [code][colink6]
-* __Day 06__: [code][colink7]
-* __Day 07__: [code][colink8]
-* __Day 08__: [code][colink9]
-* __Day 09__: [code][colink10]
-* __Day 10__: [code][colink11]
-* __Day 11__: [code][colink12]
-* __Day 12__: [code][colink13]
-* __Day 13__: [code][colink14]
-* __Day 14__: [code][colink15]
-* __Day 15__: [code][colink16]
-* __Day 16__: [code][colink17]
-* __Day 17__: [code][colink18]
-* __Day 18__: [code][colink19]
-* __Day 19__: [code][colink20]
-* __Day 20__: [code][colink21]
-* __Day 21__: [code][colink22]
-* __Day 22__: [code][colink23]
-* __Day 23__: [code][colink24]
-* __Day 24__: [code][colink25]
-* __Day 25__: [code][colink26]
-* __Day 26__: [code][colink27]
-* __Day 27__: [code][colink28]
-* __Day 28__: [code][colink29]
-* __Day 29__: [code][colink30]
+* __Day 00__ : [code][colink1]
+* __Day 01__ : [code][colink2]
+* __Day 02__ : [code][colink3]
+* __Day 03__ : [code][colink4]
+* __Day 04__ : [code][colink5]
+* __Day 05__ : [code][colink6]
+* __Day 06__ : [code][colink7]
+* __Day 07__ : [code][colink8]
+* __Day 08__ : [code][colink9]
+* __Day 09__ : [code][colink10]
+* __Day 10__ : [code][colink11]
+* __Day 11__ : [code][colink12]
+* __Day 12__ : [code][colink13]
+* __Day 13__ : [code][colink14]
+* __Day 14__ : [code][colink15]
+* __Day 15__ : [code][colink16]
+* __Day 16__ : [code][colink17]
+* __Day 17__ : [code][colink18]
+* __Day 18__ : [code][colink19]
+* __Day 19__ : [code][colink20]
+* __Day 20__ : [code][colink21]
+* __Day 21__ : [code][colink22]
+* __Day 22__ : [code][colink23]
+* __Day 23__ : [code][colink24]
+* __Day 24__ : [code][colink25]
+* __Day 25__ : [code][colink26]
+* __Day 26__ : [code][colink27]
+* __Day 27__ : [code][colink28]
+* __Day 28__ : [code][colink29]
+* __Day 29__ : [code][colink30]
 
 [colink1]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_00_Hello_World.cpp
 [colink2]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_01_Data_Types.cpp
@@ -126,12 +126,12 @@
 ## [SWEA (SW Expert Academy)][swealink]
 [swealink]: https://swexpertacademy.com/main/main.do
 
-* __1204. 최빈수 구하기__: [code][swlink1]          
-* __1206. View__: [code][swlink2]          
-* __1208. Flatten__: [code][swlink3]        
-* __1209. sum__: [code][swlink4]       
-* __1210. Ladder1__: [code][swlink5]         
-* __1211. Ladder2__: [code][swlink6]         
+* __1204. 최빈수 구하기__ : [code][swlink1]          
+* __1206. View__ : [code][swlink2]          
+* __1208. Flatten__ : [code][swlink3]        
+* __1209. sum__ : [code][swlink4]       
+* __1210. Ladder1__ : [code][swlink5]         
+* __1211. Ladder2__ : [code][swlink6]         
 
 [swlink1]: https://github.com/ssun-g/solution/blob/master/SWEA/1204_%EC%B5%9C%EB%B9%88%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0.cpp
 [swlink2]: https://github.com/ssun-g/solution/blob/master/SWEA/1206_View.cpp
