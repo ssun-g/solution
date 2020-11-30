@@ -111,6 +111,11 @@
 [colink30]: https://github.com/ssun-g/solution/blob/master/HackerRank/30_Days_of_Code/Day_29_Bitwise_AND.cpp
 <hr/>
 
+#### Algorithms(Warmup)
+* __Compare the Triplets__: [code][wulink1]
+
+[wulink1]: https://github.com/ssun-g/solution/blob/master/HackerRank/Algorithms/Warmup/Compare_the_Triplets.cpp
+
 ## [Programmers][programmerslink]
 [programmerslink]: https://programmers.co.kr/
 
