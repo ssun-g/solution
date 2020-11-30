@@ -19,15 +19,23 @@
 
 ## Hackerrank
 #### 10 Days of Statistics
-* __Day 0__:           
-* __Day 1__:           
-* __Day 4__:          
-* __Day 5__:              
-* __Day 6__:           
-* __Day 7__:            
-* __Day 8__:         
-* __Day 9__:         
+* __Day 0__: [code][halink1]           
+* __Day 1__: [code][halink2]          
+* __Day 4__: [code][halink3]         
+* __Day 5__: [code][halink4]             
+* __Day 6__: [code][halink5]          
+* __Day 7__: [code][halink6]           
+* __Day 8__: [code][halink7]        
+* __Day 9__: [code][halink8]
 
+[halink1]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_0
+[halink2]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_1
+[halink3]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_4
+[halink4]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_5
+[halink5]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_6
+[halink6]: https://github.com/ssun-g/solution/tree/master/HackerRank/10_Days_of_Statistics/Day_7
+[halink7]: https://github.com/ssun-g/solution/blob/master/HackerRank/10_Days_of_Statistics/Day_8/Day_8_Least_Square_Regression_Line.cpp
+[halink8]: https://github.com/ssun-g/solution/blob/master/HackerRank/10_Days_of_Statistics/Day_9/Day_9_Multiple_Linear_Regression.cpp
 
 ## Programmers
 추후 업데이트
