@@ -1,9 +1,10 @@
 # Online Judge Solution
-## Algospot
+## [Algospot][algospotlink]
 * __boardcover__: [code][allink1]      
 * __clocksync__: [code][allink2]       
 * __picnic__: [code][allink3]
 
+[algospotlink]: https://algospot.com/
 [allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
 [allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/clocksync.cpp
 [allink3]: https://github.com/ssun-g/solution/blob/master/Algospot/picnic.cpp
