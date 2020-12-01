@@ -120,6 +120,7 @@
 ## [Programmers][programmerslink]
 [programmerslink]: https://programmers.co.kr/
 
+#### C++
 * __124 나라의 숫자__ : [code][prolink1]            
 * __2016년__ : [code][prolink2]                
 * __2xn 타일링__ : [code][prolink3]             
@@ -211,6 +212,9 @@
 * __핸드폰 번호 가리기__ : [code][prolink92]               
 * __행렬의 곱셈__ : [code][prolink93]                
 * __행렬의 덧셈__ : [code][prolink94]                      
+
+#### Java
+추후 업데이트
 
 [prolink1]: https://github.com/ssun-g/solution/blob/master/Programmers/124_%EB%82%98%EB%9D%BC%EC%9D%98_%EC%88%AB%EC%9E%90.cpp
 [prolink2]: https://github.com/ssun-g/solution/blob/master/Programmers/2016%EB%85%84.cpp
