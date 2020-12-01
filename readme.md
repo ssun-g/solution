@@ -121,7 +121,7 @@
 [programmerslink]: https://programmers.co.kr/
 
 #### C++
-* __124 나라의 숫자__ : [code][prolink1]            
+* __124 나라의 숫자__ : __[code]__[prolink1]            
 * __2016년__ : [code][prolink2]                
 * __2xn 타일링__ : [code][prolink3]             
 * __H-Index__ : [code1][prolink4] [code2][prolink5]                  
