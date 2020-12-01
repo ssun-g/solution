@@ -4,11 +4,13 @@
 
 * __boardcover__ : [code][allink1]      
 * __clocksync__ : [code][allink2]       
+* __festival__ : [code][algofestival]
 * __picnic__ : [code][allink3]
 
 [allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
 [allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/clocksync.cpp
 [allink3]: https://github.com/ssun-g/solution/blob/master/Algospot/picnic.cpp
+[algofestival]: https://github.com/ssun-g/solution/blob/master/Algospot/festival.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
