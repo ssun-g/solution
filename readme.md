@@ -7,6 +7,7 @@
 * __festival__ : [code][algofestival]
 * __loan__ : [code][algoloan]
 * __picnic__ : [code][allink3]
+* __ratio__ : [code][algoratio]
 * __roots__ : [code][algoroots]
 
 [allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
@@ -15,7 +16,8 @@
 [algofestival]: https://github.com/ssun-g/solution/blob/master/Algospot/festival.cpp
 [algoroots]: https://github.com/ssun-g/solution/blob/master/Algospot/roots.cpp
 [algoloan]: https://github.com/ssun-g/solution/blob/master/Algospot/loan.cpp
-<hr/>
+[algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/ratio.cpp
+<hr/>1
 
 ## [AtCoder][atcoderlink]
 [atcoderlink]: https://atcoder.jp/
