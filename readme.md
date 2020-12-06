@@ -5,6 +5,7 @@
 * __boardcover__ : [code][allink1]      
 * __clocksync__ : [code][allink2]       
 * __festival__ : [code][algofestival]
+* __fossil__ : [code][algofossil]
 * __loan__ : [code][algoloan]
 * __picnic__ : [code][allink3]
 * __ratio__ : [code][algoratio]
@@ -17,6 +18,7 @@
 [algoroots]: https://github.com/ssun-g/solution/blob/master/Algospot/roots.cpp
 [algoloan]: https://github.com/ssun-g/solution/blob/master/Algospot/loan.cpp
 [algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/ratio.cpp
+[fossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
 <hr/>1
 
 ## [AtCoder][atcoderlink]
