@@ -18,7 +18,7 @@
 [algoroots]: https://github.com/ssun-g/solution/blob/master/Algospot/roots.cpp
 [algoloan]: https://github.com/ssun-g/solution/blob/master/Algospot/loan.cpp
 [algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/ratio.cpp
-[fossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
+[algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
 <hr/>1
 
 ## [AtCoder][atcoderlink]
