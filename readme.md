@@ -23,7 +23,7 @@
 [algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
 [algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/pass486.cpp
 [algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/potion.cpp
-<hr/>1
+<hr/>
 
 ## [AtCoder][atcoderlink]
 [atcoderlink]: https://atcoder.jp/
