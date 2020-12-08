@@ -9,6 +9,7 @@
 * __loan__ : [code][algoloan]
 * __pass486__ : [code][algopass486]
 * __picnic__ : [code][allink3]
+* __potion__ : [code][algopotion]
 * __ratio__ : [code][algoratio]
 * __roots__ : [code][algoroots]
 
@@ -21,6 +22,7 @@
 [algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/ratio.cpp
 [algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
 [algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/pass486.cpp
+[algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/potion.cpp
 <hr/>1
 
 ## [AtCoder][atcoderlink]
