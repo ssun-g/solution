@@ -24,7 +24,7 @@
 [algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/FOSSIL.cpp
 [algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/PASS486.cpp
 [algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/POTION.cpp
-algograduation]: https://github.com/ssun-g/solution/blob/master/Algospot/GRADUATION.cpp
+[algograduation]: https://github.com/ssun-g/solution/blob/master/Algospot/GRADUATION.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
