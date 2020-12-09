@@ -9,7 +9,7 @@ int cache[10][1 << 12];
 
 int bitCount(int n) {
 	if (n == 0) return 0;
-	return n % 2 + bitCount(n / 2);
+	return (n % 2) + bitCount(n / 2);
 }
 
 int graduation(int semester, int taken) {
@@ -19,8 +19,8 @@ int graduation(int semester, int taken) {
 
 	int &ret = cache[semester][taken];
 	if (ret != -1) return ret;
-	ret = INF;
 
+	ret = INF;
 	int canTake = (courses[semester] & ~taken);
 	for (int i = 0; i < N; i++) {
 		if ((canTake & (1 << i)) && (taken & require[i]) != require[i])
