@@ -2,27 +2,29 @@
 ## [Algospot][algospotlink]
 [algospotlink]: https://algospot.com/
 
-* __boardcover__ : [code][allink1]      
-* __clocksync__ : [code][allink2]       
-* __festival__ : [code][algofestival]
-* __fossil__ : [code][algofossil]
-* __loan__ : [code][algoloan]
-* __pass486__ : [code][algopass486]
-* __picnic__ : [code][allink3]
-* __potion__ : [code][algopotion]
-* __ratio__ : [code][algoratio]
-* __roots__ : [code][algoroots]
+* __BOARDCOVER__ : [code][allink1]      
+* __CLOCKSYNC__ : [code][allink2]       
+* __FESTIVAL__ : [code][algofestival]
+* __FOSSIL__ : [code][algofossil]
+* __GRADUATION__ : [code][algograduation]
+* __LOAN__ : [code][algoloan]
+* __PASS486__ : [code][algopass486]
+* __PICNIC__ : [code][allink3]
+* __POTION__ : [code][algopotion]
+* __RATIO__ : [code][algoratio]
+* __ROOTS__ : [code][algoroots]
 
-[allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/boardcover.cpp
-[allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/clocksync.cpp
-[allink3]: https://github.com/ssun-g/solution/blob/master/Algospot/picnic.cpp
-[algofestival]: https://github.com/ssun-g/solution/blob/master/Algospot/festival.cpp
-[algoroots]: https://github.com/ssun-g/solution/blob/master/Algospot/roots.cpp
-[algoloan]: https://github.com/ssun-g/solution/blob/master/Algospot/loan.cpp
-[algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/ratio.cpp
-[algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/fossil.cpp
-[algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/pass486.cpp
-[algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/potion.cpp
+[allink1]: https://github.com/ssun-g/solution/blob/master/Algospot/BOARDCOVER.cpp
+[allink2]: https://github.com/ssun-g/solution/blob/master/Algospot/CLOCKSYNC.cpp
+[allink3]: https://github.com/ssun-g/solution/blob/master/Algospot/PICNIC.cpp
+[algofestival]: https://github.com/ssun-g/solution/blob/master/Algospot/FESTIVAL.cpp
+[algoroots]: https://github.com/ssun-g/solution/blob/master/Algospot/ROOTS.cpp
+[algoloan]: https://github.com/ssun-g/solution/blob/master/Algospot/LOAN.cpp
+[algoratio]: https://github.com/ssun-g/solution/blob/master/Algospot/RATIO.cpp
+[algofossil]: https://github.com/ssun-g/solution/blob/master/Algospot/FOSSIL.cpp
+[algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/PASS486.cpp
+[algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/POTION.cpp
+algograduation]: https://github.com/ssun-g/solution/blob/master/Algospot/GRADUATION.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
