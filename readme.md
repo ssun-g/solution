@@ -11,6 +11,7 @@
 * __PASS486__ : [code][algopass486]
 * __PICNIC__ : [code][allink3]
 * __POTION__ : [code][algopotion]
+* __QUADTREE__ : [code][algoquadtree]
 * __RATIO__ : [code][algoratio]
 * __ROOTS__ : [code][algoroots]
 
@@ -25,6 +26,7 @@
 [algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/PASS486.cpp
 [algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/POTION.cpp
 [algograduation]: https://github.com/ssun-g/solution/blob/master/Algospot/GRADUATION.cpp
+[algoquadtree]: https://github.com/ssun-g/solution/blob/master/Algospot/CUADTREE.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
