@@ -227,7 +227,7 @@
 * __1712__ : [code][bojlink186]         
 * __17123__ : [code][bojlink187]       
 * __17140__ : [code][bojlink188]           
-* __1725__ : [code][bojlink189]         
+* __1725__ : [code(stack)]][bojlink189], [code(d&c)][boj1725d&c]         
 * __17362__ : [code][bojlink190]        
 * __1743__ : [code][bojlink191]        
 * __1744__ : [code][bojlink192]         
@@ -610,7 +610,7 @@
 [bojlink186]: https://github.com/ssun-g/solution/blob/master/BOJ/1712.cpp
 [bojlink187]: https://github.com/ssun-g/solution/blob/master/BOJ/17123.cpp
 [bojlink188]: https://github.com/ssun-g/solution/blob/master/BOJ/17140.cpp
-[bojlink189]: https://github.com/ssun-g/solution/blob/master/BOJ/1725.cpp
+[bojlink189]: https://github.com/ssun-g/solution/blob/master/BOJ/1725(stack).cpp
 [bojlink190]: https://github.com/ssun-g/solution/blob/master/BOJ/17362.cpp
 [bojlink191]: https://github.com/ssun-g/solution/blob/master/BOJ/1743.cpp
 [bojlink192]: https://github.com/ssun-g/solution/blob/master/BOJ/1744.cpp
@@ -806,6 +806,7 @@
 [bojlink382]: https://github.com/ssun-g/solution/blob/master/BOJ/9935.cpp
 [boj2745]: https://github.com/ssun-g/solution/blob/master/BOJ/2745.cpp
 [boj1309]: https://github.com/ssun-g/solution/blob/master/BOJ/1309.cpp
+[boj1725d&c]: https://github.com/ssun-g/solution/blob/master/BOJ/1725(d&c).cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
