@@ -227,7 +227,7 @@
 * __1712__ : [code][bojlink186]         
 * __17123__ : [code][bojlink187]       
 * __17140__ : [code][bojlink188]           
-* __1725__ : [code(stack)]][bojlink189], [code(d&c)][boj1725d&c]         
+* __1725__ : [code(stack)][bojlink189], [code(d&c)][boj1725d&c]         
 * __17362__ : [code][bojlink190]        
 * __1743__ : [code][bojlink191]        
 * __1744__ : [code][bojlink192]         
