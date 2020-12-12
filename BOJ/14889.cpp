@@ -1,51 +1,55 @@
-#include<cstdio>
-#include<math.h>
-#include<algorithm>
+﻿#include<bits/stdc++.h>
 using namespace std;
 
-int n;
 int result = 987654321;
-int arr[21][21];
-int check[21];
-int teamF[10];
-int teamS[10];
+int stats[20][20];
+int check[20];
+int team_start[10];
+int team_link[10];
 
-void dfs(int init, int cnt) {
-	if (cnt == n / 2) {
+void dfs(int init, int cnt, int size) {
+	if (cnt == size / 2) {
 		int idx = 0;
-		int sumF = 0;
-		int sumS = 0;
-		for (int i = 1; i <= n; i++) {
-			if (!check[i]) teamS[idx++] = i;
+		int sum_start = 0;
+		int sum_link = 0;
+		for (int i = 0; i < size; i++) {
+			if (!check[i]) team_link[idx++] = i;
 		}
 
-		for (int i = 0; i < n / 2; i++) {
-			for (int j = 1; j <= n; j++) {
-				if (teamF[i] != j && check[j]) sumF += arr[teamF[i]][j];
-				if (teamS[i] != j && !check[j]) sumS += arr[teamS[i]][j];
+		for (int i = 0; i < size / 2; i++) {
+			for (int j = 0; j < size; j++) {
+				if (team_start[i] != j && check[j])
+					sum_start += stats[team_start[i]][j];
+
+				if (team_link[i] != j && !check[j])
+					sum_link += stats[team_link[i]][j];
 			}
 		}
-		result = min(result, abs(sumF - sumS));
+		result = min(result, abs(sum_start - sum_link));
+
+		return;
 	}
-	for (int i = init + 1; i <= n; i++) {
+
+	for (int i = init; i < size; i++) {
 		if (!check[i]) {
 			check[i] = 1;
-			teamF[cnt] = i;
-			dfs(i, cnt + 1);
+			team_start[cnt] = i;
+			dfs(i + 1, cnt + 1, size);
 			check[i] = 0;
 		}
 	}
 }
 
 int main() {
-	scanf("%d", &n);
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= n; j++) {
-			scanf("%d", &arr[i][j]);
+	int N;
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			cin >> stats[i][j];
 		}
 	}
-	dfs(0, 0);
-	printf("%d\n", result);
+	dfs(0, 0, N);
+	cout << result << '\n';
 
 	return 0;
 }
