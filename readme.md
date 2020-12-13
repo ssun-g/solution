@@ -198,6 +198,7 @@
 * __1463__ : [code][bojlink157]        
 * __14659__ : [code][bojlink158]         
 * __14681__ : [code][bojlink159]        
+* __14724__ : [code][boj14724]
 * __14728__ : [code][bojlink160]       
 * __1475__ : [code][bojlink161]       
 * __1476__ : [code][bojlink162]        
@@ -229,6 +230,7 @@
 * __17140__ : [code][bojlink188]           
 * __1725__ : [code(stack)][bojlink189], [code(d&c)][boj1725d&c]         
 * __17362__ : [code][bojlink190]        
+* __19564__ : [code][boj19564]
 * __1743__ : [code][bojlink191]        
 * __1744__ : [code][bojlink192]         
 * __1748__ : [code][bojlink193]         
@@ -809,6 +811,8 @@
 [boj1309]: https://github.com/ssun-g/solution/blob/master/BOJ/1309.cpp
 [boj1725d&c]: https://github.com/ssun-g/solution/blob/master/BOJ/1725(d&c).cpp
 [boj6549]: https://github.com/ssun-g/solution/blob/master/BOJ/6549.cpp
+[boj14724]: https://github.com/ssun-g/solution/blob/master/BOJ/14724.cpp
+[boj19564]: https://github.com/ssun-g/solution/blob/master/BOJ/19564.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
