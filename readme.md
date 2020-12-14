@@ -4,6 +4,7 @@
 
 * __BOARDCOVER__ : [code][allink1]      
 * __CLOCKSYNC__ : [code][allink2]       
+* __FANMEETING__ : [code][algofanmeeting]
 * __FESTIVAL__ : [code][algofestival]
 * __FENCE__ : [code(stack)][algofence1], [code(d&c)][algofence2]
 * __FOSSIL__ : [code][algofossil]
@@ -30,6 +31,7 @@
 [algoquadtree]: https://github.com/ssun-g/solution/blob/master/Algospot/CUADTREE.cpp
 [algofence1]: https://github.com/ssun-g/solution/blob/master/Algospot/FENCE(stack).cpp
 [algofence2]: https://github.com/ssun-g/solution/blob/master/Algospot/FENCE(d&c).cpp
+[algofanmeeting]: https://github.com/ssun-g/solution/blob/master/Algospot/FANMEETING.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
