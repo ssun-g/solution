@@ -9,6 +9,7 @@
 * __FENCE__ : [code(stack)][algofence1], [code(d&c)][algofence2]
 * __FOSSIL__ : [code][algofossil]
 * __GRADUATION__ : [code][algograduation]
+* __JUMPGAME__ : [code][algojumpgame]
 * __LOAN__ : [code][algoloan]
 * __NQUEEN__ : [code][algonqueen]
 * __PASS486__ : [code][algopass486]
@@ -34,6 +35,7 @@
 [algofence2]: https://github.com/ssun-g/solution/blob/master/Algospot/FENCE(d&c).cpp
 [algofanmeeting]: https://github.com/ssun-g/solution/blob/master/Algospot/FANMEETING.cpp
 [algonqueen]: https://github.com/ssun-g/solution/blob/master/Algospot/NQUEEN.cpp
+[algojumpgame]: https://github.com/ssun-g/solution/blob/master/Algospot/JUMPGAME.cpp
 <hr/>
 
 ## [AtCoder][atcoderlink]
