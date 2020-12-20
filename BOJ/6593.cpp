@@ -71,11 +71,15 @@ int main() {
 			}
 		}
 
+		bool escapeFlag = false;
 		for (int i = 0; i < L; i++) {
+			if (escapeFlag) break;
 			for (int j = 0; j < R; j++) {
+				if (escapeFlag) break;
 				for (int k = 0; k < C; k++) {
 					if (Map[i][j][k] == 'S') {
 						cout << bfs(i, j, k) << '\n';
+						escapeFlag = true;
 						break;
 					}
 				}
