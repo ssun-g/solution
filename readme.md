@@ -400,6 +400,7 @@
 * __5014__ : [code][bojlink345]         
 * __5076__ : [code][bojlink346]           
 * __5338__ : [code][bojlink347]          
+* __5427__ : [code][boj5427]
 * __5430__ : [code][bojlink348]        
 * __5543__ : [code][bojlink349]           
 * __5565__ : [code][bojlink350]           
@@ -835,6 +836,7 @@
 [boj2644]: https://github.com/ssun-g/solution/blob/master/BOJ/2644.cpp
 [boj6593]: https://github.com/ssun-g/solution/blob/master/BOJ/6593.cpp
 [boj3055]: https://github.com/ssun-g/solution/blob/master/BOJ/3055.cpp
+[boj5427]: https://github.com/ssun-g/solution/blob/master/BOJ/5427.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
