@@ -4,6 +4,16 @@ using namespace std;
 int N, T, G;
 int check[100000];
 
+int digitCnt(int num) {
+	int ret = 0;
+	while (num) {
+		num /= 10;
+		ret++;
+	}
+
+	return pow(10, ret - 1);
+}
+
 void bfs(int start) {
 	queue<int> q;
 	q.push(start);
@@ -24,28 +34,10 @@ void bfs(int start) {
 		int B = cur * 2;
 		if (cur * 2 > 99999) continue;
 
-		if (1 <= B && B <= 9 && check[B - 1] == -1) {
-			B -= 1;
-			check[B] = check[cur] + 1;
-			q.push(B);
-		}
-		else if (10 <= B && B <= 99 && check[B - 10] == -1) {
-			B -= 10;
-			check[B] = check[cur] + 1;
-			q.push(B);
-		}
-		else if (100 <= B && B <= 999 && check[B - 100] == -1) {
-			B -= 100;
-			check[B] = check[cur] + 1;
-			q.push(B);
-		}
-		else if (1000 <= B && B <= 9999 && check[B - 1000] == -1) {
-			B -= 1000;
-			check[B] = check[cur] + 1;
-			q.push(B);
-		}
-		else if (10000 <= B && B <= 99999 && check[B - 10000] == -1) {
-			B -= 10000;
+		int digit = digitCnt(B);
+		B -= digit;
+
+		if (check[B] == -1) {
 			check[B] = check[cur] + 1;
 			q.push(B);
 		}
