@@ -290,6 +290,7 @@
 * __2178__ : [code][bojlink236]           
 * __2186__ : [code][bojlink237]          
 * __2193__ : [code][bojlink238]          
+* __2206__ : [code][boj2206]
 * __2217__ : [code][bojlink239]             
 * __2225__ : [code][bojlink240]          
 * __2231__ : [code][bojlink241]          
@@ -839,6 +840,7 @@
 [boj3055]: https://github.com/ssun-g/solution/blob/master/BOJ/3055.cpp
 [boj5427]: https://github.com/ssun-g/solution/blob/master/BOJ/5427.cpp
 [boj16397]: https://github.com/ssun-g/solution/blob/master/BOJ/16397.cpp
+[boj2206]: https://github.com/ssun-g/solution/blob/master/BOJ/2206.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
