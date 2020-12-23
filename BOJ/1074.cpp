@@ -1,44 +1,35 @@
-#include<cstdio>
-#include<cmath>
+﻿#include<bits/stdc++.h>
 using namespace std;
 
-int cnt, n, r, c;
-void go(int, int, int);
+int cnt;
+int N, r, c;
 
-int main() {
-	scanf("%d%d%d", &n, &r, &c);
-
-	go(0, 0, pow(2, n));
-	return 0;
-}
-
-void go(int x, int y, int size) {
-	if (size == 2) {
-		if (x == r && y == c) {
-			printf("%d", cnt);
-			return;
+bool dnc(int y, int x, int size) {
+	if (size == 1) {
+		if (y == r && x == c) {
+			printf("%d\n", cnt);
+			return true;
 		}
 		cnt++;
-		if (x == r && y + 1 == c) {
-			printf("%d", cnt);
-			return;
-		}
-		cnt++;
-		if (x + 1 == r && y == c) {
-			printf("%d", cnt);
-			return;
-		}
-		cnt++;
-		if (x + 1 == r && y + 1 == c) {
-			printf("%d", cnt);
-			return;
-		}
-		cnt++;
-		return;
+		return false;
 	}
 
-	go(x, y, size / 2);
-	go(x, y + (size / 2), size / 2);
-	go(x + (size / 2), y, size / 2);
-	go(x + (size / 2), y + (size / 2), size / 2);
+	if (!(y <= r && r < y + size && x <= c && c < x + size)) {
+		cnt += size*size;
+		return false;
+	}
+
+	if (dnc(y, x, size / 2)) return true;
+	if (dnc(y, x + size / 2, size / 2)) return true;
+	if (dnc(y + size / 2, x, size / 2)) return true;
+	if (dnc(y + size / 2, x + size / 2, size / 2)) return true;
+
+	return false;
+}
+
+int main() {
+	cin >> N >> r >> c;
+	dnc(0, 0, pow(2, N));
+
+	return 0;
 }
