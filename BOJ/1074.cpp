@@ -29,6 +29,7 @@ bool dnc(int y, int x, int size) {
 
 int main() {
 	cin >> N >> r >> c;
+
 	dnc(0, 0, pow(2, N));
 
 	return 0;
