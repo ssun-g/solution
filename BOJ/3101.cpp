@@ -7,7 +7,6 @@ string order;
 long long Sum(long long n) {
 	// 자료형에 주의하자!!
 	// int로 받을 시 계산 도중 32비트를 넘어갈 수 있다.
-	// 이거 때문에 3번이나 틀린건 비밀..
 	return (n*(n + 1)) / 2;
 }
 
