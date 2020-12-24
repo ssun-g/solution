@@ -70,6 +70,7 @@
 * __1032__ : [code][bojlink18]            
 * __1037__ : [code][bojlink19]         
 * __1038__ : [code][bojlink20]            
+* __1039__ : [code][boj1039]
 * __10430__ : [code][bojlink21]            
 * __10448__ : [code][bojlink22]           
 * __10451__ : [code][bojlink23]            
@@ -841,6 +842,7 @@
 [boj5427]: https://github.com/ssun-g/solution/blob/master/BOJ/5427.cpp
 [boj16397]: https://github.com/ssun-g/solution/blob/master/BOJ/16397.cpp
 [boj2206]: https://github.com/ssun-g/solution/blob/master/BOJ/2206.cpp
+[boj1039]: https://github.com/ssun-g/solution/blob/master/BOJ/1039.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
