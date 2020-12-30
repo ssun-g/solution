@@ -5,7 +5,7 @@ int N, K, answer;
 int put[100];
 int schedule[100];
 
-void Change(int init) {
+int Change(int init) {
 	int change_idx, tmpidx = -1;
 	for (int i = 0; i < N; i++) {
 		int lastidx = 0;
@@ -19,8 +19,8 @@ void Change(int init) {
 			tmpidx = lastidx;
 		}
 	}
-	answer++;
-	put[change_idx] = schedule[init];
+
+	return change_idx;
 }
 
 void solve() {
@@ -43,7 +43,8 @@ void solve() {
 		}
 		if (usedFlug) continue;
 
-		Change(i);
+		put[Change(i)] = schedule[i];
+		answer++;
 	}
 
 	cout << answer << '\n';
