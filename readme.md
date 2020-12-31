@@ -1011,6 +1011,7 @@
 * __위장__ : [code][prolink58]                 
 * __이상한 문자 만들기__ : [code][prolink59]                   
 * __이중우선순위큐__ : [code][prolink60]                    
+* __이진_변환_반복하기__ : [code][이진변환반복하기]
 * __입국심사__ : [code][prolink61]              
 * __자릿수 더하기__ : [code][prolink62]               
 * __자연수 뒤집어 배열로 만들기__ : [code][prolink63]                       
@@ -1143,6 +1144,7 @@
 [prolink92]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%95%B8%EB%93%9C%ED%8F%B0_%EB%B2%88%ED%98%B8_%EA%B0%80%EB%A6%AC%EA%B8%B0.cpp
 [prolink93]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EA%B3%B1%EC%85%88.cpp
 [prolink94]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88.cpp
+[이진변환반복하기]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%9D%B4%EC%A7%84_%EB%B3%80%ED%99%98_%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0.cpp
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
