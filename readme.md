@@ -1164,7 +1164,7 @@
 [prolink93]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EA%B3%B1%EC%85%88.cpp
 [prolink94]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88.cpp
 [이진변환반복하기]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%9D%B4%EC%A7%84_%EB%B3%80%ED%99%98_%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0.cpp
-[pro가장먼노드]: https://github.com/ssun-g/solution/blob/master/Programmers/가장_먼_노드.cpp
+[pro가장먼노드]: https://github.com/ssun-g/solution/blob/master/Programmers/%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C.cpp
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
