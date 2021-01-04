@@ -982,6 +982,7 @@
 * __x만큼 간격이 있는 n개의 숫자__ : [code][prolink9]                 
 * __가운데 글자 가져오기__ : [code][prolink10]                   
 * __가장 큰 수__ : [code][prolink11]           
+* __가장 먼 노드__ : [code][pro가장먼노드]
 * __가장 큰 정사각형 찾기__ : [code][prolink12]            
 * __같은 숫자는 싫어__ : [code][prolink13]          
 * __괄호 변환__ : [code][prolink14]         
@@ -1163,6 +1164,7 @@
 [prolink93]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EA%B3%B1%EC%85%88.cpp
 [prolink94]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88.cpp
 [이진변환반복하기]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%9D%B4%EC%A7%84_%EB%B3%80%ED%99%98_%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0.cpp
+[pro가장먼노드]: https://github.com/ssun-g/solution/blob/master/Programmers/가장_먼_노드.cpp
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
