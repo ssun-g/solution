@@ -14,9 +14,8 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
 		string s = "";
 		int k = n;
 		while (k--) {
-			if (v[i] == 0) s += ' ';
-			else if (v[i] % 2 == 0) s += ' ';
-			else s += '#';
+			if (v[i] % 2 == 1) s += '#';
+			else s += ' ';
 			v[i] /= 2;
 		}
 		reverse(s.begin(), s.end());
