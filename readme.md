@@ -978,7 +978,7 @@
 #### C++
 * __[1차] 다트 게임__ : [code][prolink21]           
 * __[1차] 비밀지도__ : [code][prolink37]             
-* __[1차] n진수 게임__ : [code][pron진수게임] 
+* __[3차] n진수 게임__ : [code][pron진수게임] 
 * __124 나라의 숫자__ : [code][prolink1]            
 * __2016년__ : [code][prolink2]                
 * __2xn 타일링__ : [code][prolink3]             
