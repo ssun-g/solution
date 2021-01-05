@@ -976,6 +976,9 @@
 [programmerslink]: https://programmers.co.kr/
 
 #### C++
+* __[1차] 다트 게임__ : [code][prolink21]           
+* __[1차] 비밀지도__ : [code][prolink37]             
+* __[1차] n진수 게임__ : [code][pron진수게임] 
 * __124 나라의 숫자__ : [code][prolink1]            
 * __2016년__ : [code][prolink2]                
 * __2xn 타일링__ : [code][prolink3]             
@@ -996,7 +999,6 @@
 * __네트워크__ : [code][prolink18]        
 * __다리를 지나는 트럭__ : [code][prolink19]           
 * __다음 큰 숫자__ : [code][prolink20]           
-* __다트 게임__ : [code][prolink21]           
 * __단어 변환__ : [code][prolink22]           
 * __더 맵게__ : [code][prolink23]          
 * __두 정수 사이의 합__ : [code][prolink24]           
@@ -1012,7 +1014,6 @@
 * __문자열 압축__ : [code][prolink34]           
 * __문자열을 정수로 바꾸기__ : [code][prolink35]             
 * __베스트앨범__ : [code][prolink36]             
-* __비밀지도__ : [code][prolink37]               
 * __삼각 달팽이__ : [code][prolink38]             
 * __서울에서 김서방 찾기__ : [code][prolink39]                  
 * __소수 만들기__ : [code][prolink40]            
@@ -1093,7 +1094,7 @@
 [prolink18]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.cpp
 [prolink19]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%8B%A4%EB%A6%AC%EB%A5%BC_%EC%A7%80%EB%82%98%EB%8A%94_%ED%8A%B8%EB%9F%AD.cpp
 [prolink20]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%8B%A4%EC%9D%8C_%ED%81%B0_%EC%88%AB%EC%9E%90.cpp
-[prolink21]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84.cpp
+[prolink21]: https://github.com/ssun-g/solution/blob/master/Programmers/%5B1%EC%B0%A8%5D_%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84.cpp
 [prolink22]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%8B%A8%EC%96%B4_%EB%B3%80%ED%99%98.cpp
 [prolink23]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%8D%94_%EB%A7%B5%EA%B2%8C.cpp
 [prolink24]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%91%90_%EC%A0%95%EC%88%98_%EC%82%AC%EC%9D%B4%EC%9D%98_%ED%95%A9.cpp
@@ -1109,7 +1110,7 @@
 [prolink34]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%95%95%EC%B6%95.cpp
 [prolink35]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0.cpp
 [prolink36]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94.cpp
-[prolink37]: https://github.com/ssun-g/solution/blob/master/Programmers/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.cpp
+[prolink37]: https://github.com/ssun-g/solution/blob/master/Programmers/%5B1%EC%B0%A8%5D_%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.cpp
 [prolink38]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%82%BC%EA%B0%81_%EB%8B%AC%ED%8C%BD%EC%9D%B4.cpp
 [prolink39]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C_%EA%B9%80%EC%84%9C%EB%B0%A9_%EC%B0%BE%EA%B8%B0.cpp
 [prolink40]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%86%8C%EC%88%98_%EB%A7%8C%EB%93%A4%EA%B8%B0.cpp
@@ -1169,6 +1170,7 @@
 [prolink94]: https://github.com/ssun-g/solution/blob/master/Programmers/%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88.cpp
 [이진변환반복하기]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%9D%B4%EC%A7%84_%EB%B3%80%ED%99%98_%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0.cpp
 [pro가장먼노드]: https://github.com/ssun-g/solution/blob/master/Programmers/%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C.cpp
+[pron진수게임]: https://github.com/ssun-g/solution/blob/master/Programmers/%5B3%EC%B0%A8%5D_n%EC%A7%84%EC%88%98%20%EA%B2%8C%EC%9E%84.cpp
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
