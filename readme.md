@@ -319,6 +319,7 @@
 * __2304__ : [code][bojlink247]          
 * __2309__ : [code(반복문)][bojlink248], [code(recursion)][bojlink249]          
 * __2331__ : [code][bojlink250]       
+* __2343__ : [code][boj2343]
 * __2438__ : [code][bojlink251]         
 * __2439__ : [code][bojlink252]           
 * __2440__ : [code][bojlink253]          
@@ -887,6 +888,7 @@
 [boj1568]: https://github.com/ssun-g/solution/blob/master/BOJ/1568.cpp
 [boj2104]: https://github.com/ssun-g/solution/blob/master/BOJ/2104.cpp
 [boj10830]: https://github.com/ssun-g/solution/blob/master/BOJ/10830.cpp
+[boj2343]: https://github.com/ssun-g/solution/blob/master/BOJ/2343.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
