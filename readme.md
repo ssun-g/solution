@@ -1095,8 +1095,10 @@
 * __행렬의 곱셈__ : [code][prolink93]                
 * __행렬의 덧셈__ : [code][prolink94]                      
 
-#### Java
-추후 업데이트
+#### Python
+* __K번째 수__ : [code][propyk번째수]
+* __모의고사__ : [code][propy모의]
+* __완주하지 못한 선수__ : [code][propy완주]
 
 [prolink1]: https://github.com/ssun-g/solution/blob/master/Programmers/124_%EB%82%98%EB%9D%BC%EC%9D%98_%EC%88%AB%EC%9E%90.cpp
 [prolink2]: https://github.com/ssun-g/solution/blob/master/Programmers/2016%EB%85%84.cpp
@@ -1195,6 +1197,9 @@
 [이진변환반복하기]: https://github.com/ssun-g/solution/blob/master/Programmers/%EC%9D%B4%EC%A7%84_%EB%B3%80%ED%99%98_%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0.cpp
 [pro가장먼노드]: https://github.com/ssun-g/solution/blob/master/Programmers/%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C.cpp
 [pron진수게임]: https://github.com/ssun-g/solution/blob/master/Programmers/%5B3%EC%B0%A8%5D_n%EC%A7%84%EC%88%98%20%EA%B2%8C%EC%9E%84.cpp
+[propyk번째수]: https://github.com/ssun-g/solution/blob/master/Programmers/python/K%EB%B2%88%EC%A7%B8%EC%88%98.py
+[propy모의]: https://github.com/ssun-g/solution/blob/master/Programmers/python/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.py
+[propy완주]: https://github.com/ssun-g/solution/blob/master/Programmers/python/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98.py
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
