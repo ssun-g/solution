@@ -1096,8 +1096,11 @@
 * __행렬의 덧셈__ : [code][prolink94]                      
 
 #### Python
+* __H-Index__ : [code][prohindex], [code(sort)][prohindex2]
 * __K번째 수__ : [code][propyk번째수]
+* __기능개발__ : [code][propy기능개발]
 * __모의고사__ : [code][propy모의]
+* __오픈채팅방__: [code][propy오픈채팅방]
 * __완주하지 못한 선수__ : [code][propy완주]
 * __전화번호 목록__ : [code][propy전화번호]
 * __체육복__ : [code][propy체육복]
@@ -1204,6 +1207,10 @@
 [propy완주]: https://github.com/ssun-g/solution/blob/master/Programmers/python/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98.py
 [propy체육복]: https://github.com/ssun-g/solution/blob/master/Programmers/python/체육복.py
 [propy전화번호]: https://github.com/ssun-g/solution/blob/master/Programmers/python/전화번호_목록.py
+[prohindex]: https://github.com/ssun-g/solution/blob/master/Programmers/python/H-Index.py
+[prohindex2]: https://github.com/ssun-g/solution/blob/master/Programmers/python/H-Index(sort).py
+[propy오픈채팅방]: https://github.com/ssun-g/solution/blob/master/Programmers/python/오픈채팅방.py
+[propy기능개발]: https://github.com/ssun-g/solution/blob/master/Programmers/python/기능개발.py
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
