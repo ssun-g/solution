@@ -1099,11 +1099,14 @@
 * __H-Index__ : [code][prohindex], [code(sort)][prohindex2]
 * __K번째 수__ : [code][propyk번째수]
 * __기능개발__ : [code][propy기능개발]
+* __멀쩡한 사각형__ : [code][propy멀쩡한]
 * __모의고사__ : [code][propy모의]
 * __오픈채팅방__: [code][propy오픈채팅방]
 * __완주하지 못한 선수__ : [code][propy완주]
 * __전화번호 목록__ : [code][propy전화번호]
 * __체육복__ : [code][propy체육복]
+* __크레인 인형뽑기 게임__ : [code][propy크레인]
+* __튜플__ : [code][propy튜플]
 
 [prolink1]: https://github.com/ssun-g/solution/blob/master/Programmers/124_%EB%82%98%EB%9D%BC%EC%9D%98_%EC%88%AB%EC%9E%90.cpp
 [prolink2]: https://github.com/ssun-g/solution/blob/master/Programmers/2016%EB%85%84.cpp
@@ -1211,6 +1214,9 @@
 [prohindex2]: https://github.com/ssun-g/solution/blob/master/Programmers/python/H-Index(sort).py
 [propy오픈채팅방]: https://github.com/ssun-g/solution/blob/master/Programmers/python/오픈채팅방.py
 [propy기능개발]: https://github.com/ssun-g/solution/blob/master/Programmers/python/기능개발.py
+[propy크레인]: https://github.com/ssun-g/solution/blob/master/Programmers/python/크레인_인형뽑기_게임.py
+[propy멀쩡한]: https://github.com/ssun-g/solution/blob/master/Programmers/python/멀쩡한_사각형.py
+[propy튜플]: https://github.com/ssun-g/solution/blob/master/Programmers/python/튜플.py
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
