@@ -1,4 +1,9 @@
 # Online Judge Solution
+- 온라인 알고리즘 문제풀이에 대한 Solution들 입니다.
+- Algospot, AtCoder, BOJ, HackerRank, SWEA는 <span style="color:red">__C++__</span>,
+- LeetCode는 <span style="color:red">__Python__</span>으로 풀었습니다.
+- Programmers는 <span style="color:red">__C++__, __Python__</span> 두 가지로 풀었습니다.
+
 ## [Algospot][algospotlink]
 [algospotlink]: https://algospot.com/
 
@@ -994,6 +999,14 @@
 * __Compare the Triplets__: [code][wulink1]
 
 [wulink1]: https://github.com/ssun-g/solution/blob/master/HackerRank/Algorithms/Warmup/Compare_the_Triplets.cpp
+<hr/>
+
+## [LeetCode][leetcodelink]
+[leetcodelink]: https://leetcode.com/
+
+* __Roman to Integer__ : [code][leetroman]
+
+[leetroman]: https://github.com/ssun-g/solution/blob/master/LeetCode/Roman_to_Integer.py
 <hr/>
 
 ## [Programmers][programmerslink]
