@@ -54,7 +54,7 @@
 
 ## [BOJ (Baekjoon Online Judge)][baekjoonlink]
 [baekjoonlink]: https://www.acmicpc.net/
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={handle})](https://solved.ac/{handle})
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={ssung})](https://solved.ac/{ssung})
 
 * __1000__ : [code][bojlink1]          
 * __1001__ : [code][bojlink2]           
