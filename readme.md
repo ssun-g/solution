@@ -1,5 +1,6 @@
 # Online Judge Solution
 - 온라인 알고리즘 문제풀이에 대한 Solution 입니다.
+- 문자열 처리 관련 문제는 최대한 python을 활용하려고 합니다.
 - Algospot, AtCoder, BOJ, HackerRank, SWEA는 <span style="color:red">__C++__</span>,
 - LeetCode는 <span style="color:red">__Python__</span>으로 풀었습니다.
 - Programmers는 <span style="color:red">__C++__, __Python__</span> 두 가지로 풀었습니다.
@@ -250,6 +251,7 @@
 * __1629__ : [code][bojlink177]        
 * __16397__ : [code][boj16397]
 * __16435__ : [code][bojlink178]         
+* __16917__ : [code][boj16917]
 * __1644__ : [code][bojlink179]         
 * __1654__ : [code][bojlink180]        
 * __1676__ : [code][bojlink181]        
@@ -917,6 +919,7 @@
 [boj5212]: https://github.com/ssun-g/solution/blob/master/BOJ/5212.cpp
 [boj4307]: https://github.com/ssun-g/solution/blob/master/BOJ/4307.cpp
 [boj15947]: https://github.com/ssun-g/solution/blob/master/BOJ/python/15947.py
+[boj16917]: https://github.com/ssun-g/solution/blob/master/BOJ/16917.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
