@@ -27,7 +27,6 @@ public:
 
 stack<Assignment> st;
 
-
 int main() {
 	int answer = 0;
 	int N;
