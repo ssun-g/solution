@@ -25,8 +25,6 @@ bool isCorrect() {
 }
 
 string checkSudoku() {
-	bool correct = true;
-
 	// 가로줄 체크
 	for (int y = 0; y < 9; y++) {
 		resetCheck(); // 가로줄을 기준으로 규칙이 맞는지 체크하기 위해 가로줄을 한 번 탐색할 때마다 check배열을 초기화
