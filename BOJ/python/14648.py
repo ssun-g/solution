@@ -28,12 +28,12 @@ query.insert(0, 0)  # 첫 번째 index를 1로 설정하기 위해 0을 넣어�
 
 for _ in range(q):
     command = list(map(int, input().rstrip("\n").split(" ")))
-    if command[0] == 1:
+    if command[0] == 1:  # 쿼리의 종류가 (1 a b)
         a = command[1]
         b = command[2]
         print(part_sum(a, b, query))
         query[a], query[b] = query[b], query[a]  # python swap
-    else:
+    else: # 쿼리의 종류가 (2 a b c d)
         a = command[1]
         b = command[2]
         c = command[3]
