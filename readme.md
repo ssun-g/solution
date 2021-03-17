@@ -182,7 +182,7 @@
 * __11726__ : [code][bojlink122]          
 * __11727__ : [code][bojlink123]          
 * __11728__ : [code][bojlink124]           
-* __11729__ : [code][bojlink125]          
+* __11729__ : [c++][bojlink125], [python][boj11729py]          
 * __1181__ : [code][bojlink126]         
 * __1182__ : [code(bitmask)][bojlink127], [code(recursion)][bojlink128]         
 * __11866__ : [code][bojlink129]         
@@ -973,6 +973,7 @@
 [boj16112py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/16112.py
 [boj14648c]: https://github.com/ssun-g/solution/blob/master/BOJ/14648.cpp
 [boj14648py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/14648.py
+[boj11729py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/11729.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]
