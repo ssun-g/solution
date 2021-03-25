@@ -5,7 +5,7 @@ int quality[200001];
 int cow[200001];
 
 int main() {
-	ios_base::sync_with_stdio(false); // µÎ ÁÙÀ» ½á¾ß ½Ã°£ ÃÊ°ú°¡ ¹ß»ýÇÏÁö ¾ÊÀ½.
+	ios_base::sync_with_stdio(false); // ë‘ ì¤„ì„ ì“°ì§€ ì•Šìœ¼ë©´ ì‹œê°„ ì´ˆê³¼ê°€ ë°œìƒí•œë‹¤.
 	cin.tie(nullptr);
 
 	int N, Q;
@@ -14,12 +14,12 @@ int main() {
 		cin >> cow[i];
 	}
 
-	for (int i = 0; i < 200001; i++) quality[i] = 1; // ¿ø¼ÒµéÀ» °öÇØÁà¾ß ÇÏ±â ¶§¹®¿¡ 1·Î ÃÊ±âÈ­
+	for (int i = 0; i < 200001; i++) quality[i] = 1; // ì›ì†Œë“¤ì„ ê³±í•´ì¤˜ì•¼ í•˜ê¸° ë•Œë¬¸ì— 1ë¡œ ì´ˆê¸°í™”
 
 	int sum = 0;
 	for (int i = 1; i <= N; i++) {
-		for (int j = i; j <= i + 3; j++) { // quality[i]´Â ¹®Á¦¿¡¼­ ÁÖ¾îÁø S¸¦ ±¸ÇÏ±â À§ÇÑ A_i * A_i+1 * A_i+2 * A_i+3À» ±¸Çö.
-			if (j%N == 0) quality[i] *= cow[j]; // 0¹øÂ° index = N¹øÂ° index
+		for (int j = i; j <= i + 3; j++) { // quality[i]ëŠ” ë¬¸ì œì—ì„œ ì£¼ì–´ì§„ Së¥¼ êµ¬í•˜ê¸° ìœ„í•œ A_i * A_i+1 * A_i+2 * A_i+3ì„ êµ¬í˜„.
+			if (j%N == 0) quality[i] *= cow[j]; // 0ë²ˆì§¸ index = Në²ˆì§¸ index
 			else quality[i] *= cow[j%N];
 		}
 		sum += quality[i];
@@ -29,11 +29,11 @@ int main() {
 		int idx;
 		cin >> idx;
 		for (int j = idx - 3; j <= idx; j++) {
-			if (j%N == 0) { // 0¹øÂ° index = N¹øÂ° index
+			if (j%N == 0) { // 0ë²ˆì§¸ index = Në²ˆì§¸ index
 				quality[N] *= -1;
 				sum += 2 * quality[N];
 			}
-			else if (j%N < 0) { // À½¼öÀÌ¸é N+(j%N)¹øÂ° ÀÎµ¦½º°¡ µÈ´Ù. ex) -1 -> N, -2 -> N-1
+			else if (j%N < 0) { // ìŒìˆ˜ì´ë©´ N+(j%N)ë²ˆì§¸ ì¸ë±ìŠ¤ê°€ ëœë‹¤. ex) -1 -> N, -2 -> N-1
 				quality[N + (j%N)] *= -1;
 				sum += 2 * quality[N + (j%N)];
 			}
