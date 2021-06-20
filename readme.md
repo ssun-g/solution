@@ -1091,6 +1091,7 @@
 [leetcodelink]: https://leetcode.com/
 
 * __Add Two Numbers__ : [code][leetaddtwonumber]
+* __Can Make Arithmetic Progression From Sequence__ : [code][leetcmapfs]
 * __Find All Numbers Disappeared in an Array__ : [code][leetfanda]
 * __Minimum Deletion Cost to Avoid Repeating Letters__ : [code][leetMDCAR]
 * __Range Sum of BST__ : [code][leetrangesumofbst]
@@ -1105,6 +1106,7 @@
 [leetfanda]: https://github.com/ssun-g/solution/blob/master/LeetCode/Find_All_Numbers_Disappeared_in_an_Array.py
 [leethammingdistance]: https://github.com/ssun-g/solution/blob/master/LeetCode/Total_Hamming_Distance.py
 [leetrangesumofbst]: https://github.com/ssun-g/solution/blob/master/LeetCode/Range_Sum_of_BST.py
+[leetcmapfs]: https://github.com/ssun-g/solution/blob/master/LeetCode/Can_Make_Arithmetic_Progression_From_Sequence.py
 <hr/>
 
 ## [Programmers][programmerslink]
