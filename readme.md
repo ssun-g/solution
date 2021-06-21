@@ -1097,6 +1097,7 @@
 * __Range Sum of BST__ : [code][leetrangesumofbst]
 * __Reverse Linked List__ : [code][leetreverselinkedlist]
 * __Roman to Integer__ : [code][leetroman]
+* __Sqrt(x)__ : [code][leetsqrt]
 * __Total Hamming Distance__ : [code][leethammingdistance]
 
 [leetroman]: https://github.com/ssun-g/solution/blob/master/LeetCode/Roman_to_Integer.py
@@ -1107,6 +1108,7 @@
 [leethammingdistance]: https://github.com/ssun-g/solution/blob/master/LeetCode/Total_Hamming_Distance.py
 [leetrangesumofbst]: https://github.com/ssun-g/solution/blob/master/LeetCode/Range_Sum_of_BST.py
 [leetcmapfs]: https://github.com/ssun-g/solution/blob/master/LeetCode/Can_Make_Arithmetic_Progression_From_Sequence.py
+[leetsqrt]: https://github.com/ssun-g/solution/blob/master/LeetCode/Sqrt(x).py
 <hr/>
 
 ## [Programmers][programmerslink]
