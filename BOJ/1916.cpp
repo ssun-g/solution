@@ -8,7 +8,7 @@ vector<pair<int, int> > vp[1001]; // (이어진 노드, 거리) 쌍
 int dist[1001];
 bool visited[1001];
 
-void dijkstra(int start, int end) {
+void dijkstra(int start) {
 	pq.push(make_pair(0, start)); // 시작점을 우선순위 큐에 삽입
 	dist[start] = 0; // 시작점의 거리를 0으로 초기화
 
@@ -23,8 +23,6 @@ void dijkstra(int start, int end) {
 		for (int i = 0; i < vp[cur].size(); i++) {
 			int next = vp[cur][i].first;
 			int n_cost = vp[cur][i].second;
-
-			// 다음 노드에 저장되어있는 비용이 (현재까지의 비용 + 다음 노드로 향할 때의 비용)보다 크다면 새로 갱신.
 			if (dist[next] > cost + n_cost) {
 				dist[next] = cost + n_cost;
 				pq.push(make_pair(dist[next], next));
@@ -49,7 +47,7 @@ int main() {
 
 	int start, end;
 	cin >> start >> end;
-	dijkstra(start, end);
+	dijkstra(start);
 	cout << dist[end] << '\n';
 
 	return 0;
