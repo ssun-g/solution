@@ -1215,6 +1215,7 @@
 #### Python
 * __H-Index__ : [code][prohindex], [code(sort)][prohindex2]
 * __K번째 수__ : [code][propyk번째수]
+* __게임 맵 최단거리__ : [code][propy게임맵최단거리]
 * __기능개발__ : [code][propy기능개발]
 * __멀쩡한 사각형__ : [code][propy멀쩡한]
 * __모의고사__ : [code][propy모의]
@@ -1336,6 +1337,7 @@
 [propy멀쩡한]: https://github.com/ssun-g/solution/blob/master/Programmers/python/멀쩡한_사각형.py
 [propy튜플]: https://github.com/ssun-g/solution/blob/master/Programmers/python/튜플.py
 [propy음양]: https://github.com/ssun-g/solution/blob/master/Programmers/python/음양_더하기.py
+[propy게임맵최단거리]: https://github.com/ssun-g/solution/blob/master/Programmers/python/게임_맵_최단거리.py
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
