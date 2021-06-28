@@ -283,7 +283,7 @@
 * __1744__ : [code][bojlink192]         
 * __1748__ : [code][bojlink193]         
 * __17509__ : [code][boj17509]
-* __1753__ : [code][bojlink194]         
+* __1753__ : [c++][bojlink194], [python][boj1753py]
 * __1759__ : [code][bojlink195]        
 * __1764__ : [code][bojlink196]         
 * __1773__ : [code][boj1773]
@@ -996,6 +996,7 @@
 [boj2578py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2578.py
 [boj2578c]: https://github.com/ssun-g/solution/blob/master/BOJ/2578.cpp
 [boj15687c]: https://github.com/ssun-g/solution/blob/master/BOJ/15687.cpp
+[boj1753py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1753.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]

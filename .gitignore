@@ -1,2 +1,5 @@
 ## folder ignore
 BOJ/python/.vscode/
+Programmers/python/.vscode/
+.vscode
+test.py
