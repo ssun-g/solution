@@ -11,7 +11,7 @@ void dijkstra(int n, int d, int c) {
 
 	for (int i = 0; i < d; i++) { // 컴퓨터의 의존성을 나타내는 그래프
 		int a, b, s;
-		scanf("%d %d %d", &a, &b, &s);
+		cin >> a >> b >> s;
 		vp[b].push_back(make_pair(a, s));
 	}
 
@@ -45,15 +45,19 @@ void dijkstra(int n, int d, int c) {
 		}
 	}
 
-	printf("%d %d\n", cnt, max_dist);
+	cout << cnt << ' ' << max_dist << '\n';
 }
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
 	int tc;
-	scanf("%d", &tc);
+	cin >> tc;
 	while (tc--) {
 		int n, d, c;
-		scanf("%d %d %d", &n, &d, &c);
+		cin >> n >> d >> c;
 		dijkstra(n, d, c);
 	}
 
