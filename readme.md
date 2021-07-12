@@ -349,7 +349,7 @@
 * __2293__ : [code][bojlink245]           
 * __2294__ : [code][bojlink246]          
 * __2304__ : [code][bojlink247]          
-* __2309__ : [code(반복문)][bojlink248], [code(recursion)][bojlink249]          
+* __2309__ : [c++(반복문)][bojlink248], [c++(recursion)][bojlink249], [python][boj2309py]          
 * __2331__ : [code][bojlink250]       
 * __2343__ : [code][boj2343]
 * __2386__ : [c++][boj2386c], [python][boj2386py]
@@ -1009,6 +1009,7 @@
 [boj2225py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2225.py
 [boj2156py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2156.py
 [boj9465py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/9465.py
+[boj2309py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2309.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]
