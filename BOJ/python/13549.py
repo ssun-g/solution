@@ -1,3 +1,8 @@
+"""
+
+2*X 위치로 순간이동 하는 경우는 이동 시간이 0초이기 때문에 가장 먼저 이동해보아야 함.
+
+"""
 import sys
 from collections import deque
 
