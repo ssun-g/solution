@@ -196,7 +196,7 @@
 * __1237__ : [code][bojlink136]           
 * __1238__ : [c++][boj1238c], [python][boj1238py]
 * __1260__ : [code][bojlink137]         
-* __1261__ : [code][bojlink138]          
+* __1261__ : [c++][bojlink138], [python][boj1261py]
 * __12780__ : [code][bojlink139]            
 * __12865__ : [code][bojlink140]         
 * __1292__ : [c++][boj1292c], [python][boj1292py]
@@ -456,7 +456,7 @@
 * __4796__ : [code][bojlink341]         
 * __4948__ : [code][bojlink342]          
 * __4949__ : [code][bojlink343]         
-* __4963__ : [code][bojlink344]          
+* __4963__ : [c++][bojlink344], [python][boj4963py]
 * __5014__ : [code][bojlink345]         
 * __5076__ : [code][bojlink346]           
 * __5086__ : [code][boj5086]
@@ -1023,8 +1023,12 @@
 [boj11054py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/11054.py
 [boj7576py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/7576.py
 [boj16929py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/16929.py
-[boj16929c]: https://github.com/ssun-g/solution/blob/master/BOJ/16929.py
+[boj16929c]: https://github.com/ssun-g/solution/blob/master/BOJ/16929.cpp
 [boj13549py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/13549.py
+[boj4963py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/4963.py
+[boj1261py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1261.py
+[boj16940py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/16940.py
+[boj16940c]: https://github.com/ssun-g/solution/blob/master/BOJ/16940.cpp
 <hr/>
 
 ## [Hackerrank][hackerranklink]
