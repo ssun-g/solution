@@ -32,7 +32,7 @@ def bfs(x, y):
                     if crash[ny][nx] > crash[cur_y][cur_x]:
                         crash[ny][nx] = crash[cur_y][cur_x]
                         queue.append([nx, ny])
-                else:  # 벽이라면 부수고 이동 가능
+                else:  # 벽이라면 부수고 이동 가능 (부순 횟수 +1)
                     if crash[ny][nx] > crash[cur_y][cur_x] + 1:
                         crash[ny][nx] = crash[cur_y][cur_x] + 1
                         queue.append([nx, ny])
