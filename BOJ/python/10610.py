@@ -4,12 +4,13 @@
 
 """
 import sys
+
 input = sys.stdin.readline
 
-N = list(map(int, input().rstrip('\n')))
+N = list(map(int, input().rstrip("\n")))
 N.sort(reverse=True)
 
-if (sum(N) % 3 == 0) and (N.count(0) != 0): # 3의 배수이고 0이 존재하면 30으로 나눌 수 있는 수
-    print(''.join(map(str, N)))
+if (sum(N) % 3 == 0) and (N.count(0) != 0):  # 3의 배수이고 0이 존재하면 30으로 나눌 수 있는 수
+    print("".join(map(str, N)))
 else:
     print(-1)
