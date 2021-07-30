@@ -19,7 +19,7 @@ int signal(int y, int x, char direction) {
 	int prop = 0;
 	while (true) {
 		// 탈출 조건
-		if (prop > N*M) break; // 전파 시간이 항성계 전체를 도는 시간보다 크다면 무한루프를 돌고 있는 것으로 판단.
+		if (prop > N*M*4) break; // 전파 시간이 항성계 전체를 도는 시간보다 크다면 무한루프를 돌고 있는 것으로 판단.
 		if (x < 0 || y < 0 || x >= M || y >= N || Map[y][x] == 'C') // 전파가 맵 밖으로 나가거나 블랙홀을 만난 경우
 			break;
 
@@ -97,7 +97,7 @@ int main() {
 	sort(answer.begin(), answer.end(), comp);
 
 	cout << answer[0].first << '\n';
-	if (answer[0].second > N*M) cout << "Voyager" << '\n';
+	if (answer[0].second > N*M*4) cout << "Voyager" << '\n';
 	else cout << answer[0].second << '\n';
 
 	return 0;
