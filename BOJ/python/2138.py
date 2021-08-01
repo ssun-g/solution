@@ -21,15 +21,15 @@ answer = []  # 각 case별 스위치 누른 횟수 저장 (target과 같을 경�
 
 # 1번 스위치를 눌렀을 경우
 init1 = copy.deepcopy(init)
-init1[0] = 0 if init1[0] + 1 == 2 else 1
-init1[1] = 0 if init1[1] + 1 == 2 else 1
+init1[0] = 0 if init1[0] == 1 else 1
+init1[1] = 0 if init1[1] == 1 else 1
 cnt1 = 1
 for i in range(1, len(init)):
     if init1[i - 1] != target[i - 1]:  # 이전 전구의 상태가 목표와 다르다면 이번 스위치는 무조건 눌러야 한다.
-        init1[i - 1] = 0 if init1[i - 1] + 1 == 2 else 1
-        init1[i] = 0 if init1[i] + 1 == 2 else 1
+        init1[i - 1] = 0 if init1[i - 1] == 1 else 1
+        init1[i] = 0 if init1[i] == 1 else 1
         if i + 1 < len(init):
-            init1[i + 1] = 0 if init1[i + 1] + 1 == 2 else 1
+            init1[i + 1] = 0 if init1[i + 1] == 1 else 1
         cnt1 += 1
 
 if init1 == target:  # 목표 상태와 같다면 누른 횟수를 저장해준다.
@@ -40,10 +40,10 @@ init2 = copy.deepcopy(init)
 cnt2 = 0
 for i in range(1, len(init)):
     if init2[i - 1] != target[i - 1]:
-        init2[i - 1] = 0 if init2[i - 1] + 1 == 2 else 1
-        init2[i] = 0 if init2[i] + 1 == 2 else 1
+        init2[i - 1] = 0 if init2[i - 1] == 1 else 1
+        init2[i] = 0 if init2[i] == 1 else 1
         if i + 1 < len(init):
-            init2[i + 1] = 0 if init2[i + 1] + 1 == 2 else 1
+            init2[i + 1] = 0 if init2[i + 1] == 1 else 1
         cnt2 += 1
 
 if init2 == target:
