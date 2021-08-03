@@ -17,8 +17,10 @@ def star(y, x, size):
     # size가 3의 배수이면 별을 저장해준다. (가장 작은 별이라고 생각)
     if size % 3 == 0:
         arr[y][x] = "*"
+
         arr[y + 1][x - 1] = "*"
         arr[y + 1][x + 1] = "*"
+        
         arr[y + 2][x - 2] = "*"
         arr[y + 2][x - 1] = "*"
         arr[y + 2][x] = "*"
