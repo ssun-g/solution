@@ -1,3 +1,9 @@
+import sys
+
+sys.setrecursionlimit(10 ** 8)
+input = sys.stdin.readline
+
+
 def hanoi(N, fr, by, to):
     """
     하노이의 탑 구현
@@ -17,7 +23,7 @@ def hanoi(N, fr, by, to):
     hanoi(N - 1, by, fr, to)  # 시작위치(by)에서 fr을 거쳐 최종 목적지 to로 이동한다.
 
 
-N = int(input())
+N = int(input().rstrip('\n'))
 
 print(2 ** N - 1)  # 하노이의 탑 이동 횟수
 hanoi(N, 1, 2, 3)
