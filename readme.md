@@ -212,6 +212,7 @@
 * __1330__ : [code][bojlink143]          
 * __13301__ : [code][bojlink144]           
 * __13305__ : [code][boj13305]
+* __13397__ : [c++][boj13397c], [python][boj13397py]
 * __13458__ : [code][bojlink145]          
 * __13549__ : [c++][boj13549], [python][boj13549py]
 * __1373__ : [code][bojlink145]           
@@ -266,7 +267,7 @@
 * __16397__ : [code][boj16397]
 * __16435__ : [code][bojlink178]         
 * __1644__ : [c++][bojlink179], [python][boj1644py]
-* __1654__ : [code][bojlink180]        
+* __1654__ : [c++][bojlink180], [python][boj1654py]
 * __1676__ : [code][bojlink181]        
 * __16917__ : [c++][boj16917], [python][boj16917py]
 * __16929__ : [c++][boj16929c], [python][boj16929py]
@@ -331,11 +332,12 @@
 * __2011__ : [code][bojlink225]           
 * __20152__ : [code][boj20152]
 * __20153__ : [code][boj20153]
+* __2022__ : [c++][boj2022c], [python][boj2022py]
 * __20500__ : [c++][boj20500c], [python][boj20500py]
 * __2089__ : [code][bojlink226]         
 * __2104__ : [code][boj2104]
 * __2108__ : [code][bojlink227]          
-* __2110__ : [code][bojlink228]             
+* __2110__ : [c++][bojlink228], [python][boj2110py]
 * __2133__ : [code][bojlink229]           
 * __2138__ : [c++][boj2138c], [python][boj2138py]
 * __2143__ : [code][bojlink230]          
@@ -428,7 +430,7 @@
 * __2789__ : [code][bojlink308]            
 * __2798__ : [code][bojlink309]           
 * __2804__ : [code][bojlink310]            
-* __2805__ : [code][bojlink311]          
+* __2805__ : [c++][bojlink311], [python][boj2805py]
 * __2839__ : [code][bojlink312]          
 * __2841__ : [code][bojlink313]           
 * __2845__ : [code][bojlink314]            
@@ -1068,6 +1070,13 @@
 [boj1517py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1517.py
 [boj1933py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1933.py
 [boj1933c]: https://github.com/ssun-g/solution/blob/master/BOJ/1933.cpp
+[boj2805py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2805.py
+[boj2022c]: https://github.com/ssun-g/solution/blob/master/BOJ/2022.cpp
+[boj2022py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2022.py
+[boj13397c]: https://github.com/ssun-g/solution/blob/master/BOJ/13397.cpp
+[boj13397py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/13397.py
+[boj1654py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1654.py
+[boj2110py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2110.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]
