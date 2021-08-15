@@ -317,7 +317,7 @@
 * __1933__ : [c++][boj1933c], [python][boj1933py]
 * __1934__ : [code][bojlink212]           
 * __1935__ : [code][bojlink213]           
-* __1939__ : [code][bojlink214]          
+* __1939__ : [c++][bojlink214], [python][boj1939py]
 * __19564__ : [code][boj19564]
 * __1963__ : [code][bojlink215]           
 * __1966__ : [code][bojlink216]          
@@ -1078,6 +1078,7 @@
 [boj1654py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1654.py
 [boj2110py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2110.py
 [boj1300py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1300.py
+[boj1939py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1939.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]
