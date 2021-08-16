@@ -1304,6 +1304,7 @@
 * __모의고사__ : [code][propy모의]
 * __오픈채팅방__: [code][propy오픈채팅방]
 * __완주하지 못한 선수__ : [code][propy완주]
+* __위클리 챌린지 1주차__ : [code][propy위클1주]
 * __음양 더하기__ : [code][propy음양]
 * __전화번호 목록__ : [code][propy전화번호]
 * __체육복__ : [code][propy체육복]
@@ -1421,6 +1422,7 @@
 [propy튜플]: https://github.com/ssun-g/solution/blob/master/Programmers/python/튜플.py
 [propy음양]: https://github.com/ssun-g/solution/blob/master/Programmers/python/음양_더하기.py
 [propy게임맵최단거리]: https://github.com/ssun-g/solution/blob/master/Programmers/python/게임_맵_최단거리.py
+[propy위클1주]: https://github.com/ssun-g/solution/blob/master/Programmers/python/위클리_챌린지_1주차.py
 <hr/>
 
 ## [SWEA (SW Expert Academy)][swealink]
