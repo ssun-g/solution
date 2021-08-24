@@ -1,55 +1,51 @@
+"""
+
+각 학생마다 (X로 가는 시간 + 돌아오는 시간)을 구해서 그 최댓값을 구하면 된다.
+
+"""
 import sys
 import heapq as hq
 
 input = sys.stdin.readline
-INF = sys.maxsize
-
-N, M, X = map(int, input().rstrip("\n").split(" "))
-vector = [[] for _ in range(N + 1)]
-
-for _ in range(M):
-    u, v, cost = map(int, input().rstrip("\n").split(" "))
-    vector[u].append((v, cost))
 
 
-def dijkstra(start, end, graph: list) -> list:
-    """
-    최단 경로 구하기
-    Args:
-        start (int): 시작 위치
-        end (int): 목표 위치
-        graph (list): 노드 간의 거리가 담겨 있는 graph
-
-    Returns:
-        list: start에서부터 각 노드까지의 최단 거리
-    """
-    visited = [False for _ in range(N + 1)]  # 노드 방문 여부 체크
-    dist = [INF] * (N + 1)  # start로부터 각 노드까지의 최단 거리(비용) 저장
-    heap_min = []  # 비용이 가장 적게드는 노드를 방문하기 위한 최소 힙
-    hq.heappush(heap_min, (0, start))  # 시작 노드를 heap에 넣어준다. (비용, 노드)
+# 다익스트라 알고리즘
+def dijkstra(start, end, road):
+    heap = []
+    dist = [sys.maxsize for _ in range(len(road))]
+    hq.heappush(heap, [0, start])
     dist[start] = 0
 
-    while heap_min:
-        cost, cur_node = hq.heappop(heap_min)
+    while heap:
+        cur_cost, cur_node = hq.heappop(heap)
 
-        if visited[cur_node]:  # 이미 방문한 노드이면 넘어간다.
-            continue
+        if cur_node == end:  # 목적지에 도착했다면 이동 시간을 반환해준다.
+            return dist[cur_node]
 
-        visited[cur_node] = True
-        for next_node, next_cost in graph[cur_node]:
-
-            # 다음 방문할 노드의 비용이 (현재까지의 비용 + 다음 노드로 이동하는 비용) 보다 크다면 비용을 갱신한다.
-            if dist[next_node] > cost + next_cost:
-                dist[next_node] = cost + next_cost
-                hq.heappush(heap_min, (dist[next_node], next_node))
-
-    return dist
+        for next_node, next_cost in road[cur_node]:
+            if cur_cost + next_cost < dist[next_node]:
+                dist[next_node] = cur_cost + next_cost
+                hq.heappush(heap, [dist[next_node], next_node])
 
 
-answer = 0
-for i in range(1, N + 1):
-    itoX = dijkstra(i, X, vector)  # 각 학생들이 X 마을로 이동하는 거리
-    Xtoi = dijkstra(X, i, vector)  # 각 학생들이 X 마을에서 자신의 집으로 돌아오는 거리
-    answer = max(answer, itoX[X] + Xtoi[i])  # 그 중 가장 많은 시간을 소비하는 학생을 찾는다.
+def solution():
+    answer = 0
+    
+    N, M, X = map(int, input().rstrip("\n").split(" "))
+    road = [[] for _ in range(N + 1)]
 
-print(answer)
+    for _ in range(M):  # 단방향 도로이므로 u -> v 경로만 업데이트
+        u, v, w = map(int, input().rstrip("\n").split(" "))
+        road[u].append([v, w])
+
+    # 1번 학생부터 N번 학생까지 왕복 시간을 구한다.
+    for start in range(1, N + 1):
+        go = dijkstra(start, X, road)  # 목적지(X)로 이동할 때의 최단시간
+        back = dijkstra(X, start, road)  # 집으로 돌아올 떄의 최단시간
+        answer = go + back if answer < go + back else answer
+
+    print(answer)
+
+
+if __name__ == "__main__":
+    solution()
