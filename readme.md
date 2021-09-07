@@ -301,7 +301,7 @@
 * __17828__ : [c++][boj17828], [python][boj17828py]
 * __17952__ : [c++][boj17952c], [python][boj17952py]
 * __1783__ : [code][bojlink198]          
-* __1806__ : [code][bojlink199]         
+* __1806__ : [c++][bojlink199], [python][boj1806py]
 * __1850__ : [code][bojlink200]         
 * __1874__ : [code][bojlink201]         
 * __1891__ : [c++][boj1891c], [python][boj1891py]
@@ -330,7 +330,7 @@
 * __1987__ : [code][bojlink220]       
 * __1991__ : [code][bojlink221]         
 * __1992__ : [code][bojlink222]         
-* __2003__ : [code][bojlink223]         
+* __2003__ : [c++][bojlink223], [python][boj2003py]
 * __2004__ : [code][bojlink224]           
 * __2011__ : [code][bojlink225]           
 * __20152__ : [code][boj20152]
@@ -1093,6 +1093,8 @@
 [boj1504py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1504.py
 [boj4485py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/4485.py
 [boj2293py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2293.py
+[boj1806py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/1806.py
+[boj2003py]: https://github.com/ssun-g/solution/blob/master/BOJ/python/2003.py
 <hr/>
 
 ## [Hackerrank][hackerranklink]
