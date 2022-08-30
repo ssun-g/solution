@@ -36,7 +36,7 @@
 [algopass486]: https://github.com/ssun-g/solution/blob/master/Algospot/PASS486.cpp
 [algopotion]: https://github.com/ssun-g/solution/blob/master/Algospot/POTION.cpp
 [algograduation]: https://github.com/ssun-g/solution/blob/master/Algospot/GRADUATION.cpp
-[algoquadtree]: https://github.com/ssun-g/solution/blob/master/Algospot/CUADTREE.cpp
+[algoquadtree]: https://github.com/ssun-g/solution/blob/master/Algospot/QUADTREE.cpp
 [algofence1]: https://github.com/ssun-g/solution/blob/master/Algospot/FENCE(stack).cpp
 [algofence2]: https://github.com/ssun-g/solution/blob/master/Algospot/FENCE(d&c).cpp
 [algofanmeeting]: https://github.com/ssun-g/solution/blob/master/Algospot/FANMEETING.cpp
