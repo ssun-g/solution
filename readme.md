@@ -1,6 +1,6 @@
 # Online Judge Solution
 - 온라인 알고리즘 문제풀이에 대한 Solution 입니다.
-- AI 공부를 시작하면서 <span style="color:red">__Python__</span>도 같이 활용해 문제를 해결하고 있습니다.
+- AI를 시작하면서 <span style="color:red">__Python__</span> 비중을 늘리고 있습니다.
 - Algospot, AtCoder, HackerRank, SWEA는 <span style="color:red">__C++__</span>,
 - LeetCode는 <span style="color:red">__Python__</span>을 사용하였습니다.
 - BOJ, Programmers는 <span style="color:red">__C++__, __Python__</span> 두 가지 모두 사용하였습니다.
