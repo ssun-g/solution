@@ -44,7 +44,6 @@ def main() -> None:
     dp = [[-1] * (1 << N) for _ in range(N)]
 
     print(tps(0, 1))
-    print(dp)
 
 
 if __name__ == "__main__":
