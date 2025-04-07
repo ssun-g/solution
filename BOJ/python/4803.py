@@ -4,7 +4,7 @@ from collections import deque
 input = sys.stdin.readline
 
 
-def iscycle(tree, check, node):
+def iscycle(tree: list, check: list, node: int) -> bool:
     check[node] = 1
 
     q = deque([[node, -1]])  # [방문할 노드, 부모 노드]
