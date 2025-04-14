@@ -39,11 +39,11 @@ def main() -> None:
 
     # 음수 구간
     neg_max_sum = 0
-    if (N - negative_index) % 2 != 0:
-        neg_max_sum += arr[negative_index]  # 음수 구간의 길이가 홀수이면 마지막 수(가장 큰 수)를 더해준다.
-
     for i in range(N - 1, negative_index, -2):  # 음수 구간은 작은 수부터 탐색
         neg_max_sum += (arr[i] * arr[i - 1])  # 음수는 무조건 묶는 것이 좋다.
+
+    if (N - negative_index) % 2 != 0:
+        neg_max_sum += arr[negative_index]  # 음수 구간의 길이가 홀수이면 마지막 수(가장 큰 수)를 더해준다.
 
     print(pos_max_sum + neg_max_sum)
 
