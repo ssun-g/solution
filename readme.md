@@ -57,6 +57,9 @@
 [baekjoonlink]: https://www.acmicpc.net/
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=ssung)](https://solved.ac/ssung)
 
+https://www.acmicpc.net/user/ssung
+위 링크에서 풀었던 문제 번호를 찾을 수 있습니다.
+
 * __1000__ : [code][bojlink1]          
 * __1001__ : [code][bojlink2]           
 * __1002__ : [code][bojlink3]             
